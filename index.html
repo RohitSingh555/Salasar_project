@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script defer src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>SALASAR</title>
 </head>
 
@@ -44,9 +45,9 @@
                 <label for="menu"><i class="fas fa-bars"></i></label>
                 <input type="checkbox" id="menu">
                 <nav>
-                    <a href="#">Home</a>
+                    <a href="/index.html">Home</a>
                     <a href="#">About</a>
-                    <a href="#">Properties</a>
+                    <a href="/properties.html">Properties</a>
                     <a href="#">Things to Know</a>
                     <a href="#">Contact</a>
                     <div class="social" style="display:flex; vertical-align:top;">
@@ -66,8 +67,11 @@
                     From projects to
                     properties, our expert team erects names with strength and distinction. Lay the foundation for
                     success with Salasar Name Builder.</p>
-                <a href="#">Show More</a>
-                <a href="#">view project</a>
+                <a href="#" class="know-more-btn">
+                    Know More &nbsp;
+                    <i class="fa fa-arrow-right arrow-icon"></i> <!-- Bootstrap icon -->
+                </a>
+                <!-- <a href="#">view project</a> -->
             </div>
         </article>
     </section>
@@ -75,7 +79,7 @@
         <div class="container">
             <article>
                 <h1>SALASAR GROUP</h1>
-                <h5>REAL ESTATE DEVELOPMENT
+                <h5 id="realestate">REAL ESTATE DEVELOPMENT
                     HOUSING / COMMERCIAL</h5>
                 <p style="line-height: 1.8;">With over 42 years of experience in the construction business, we have
                     successfully completed
@@ -86,9 +90,16 @@
                     the years, we have diversified our portfolio, expanding into all sectors of the real estate industry
                     and beyond. Our organization continues to thrive, growing in both size and diversity, while
                     maintaining a steadfast commitment to excellence.</p>
-                <a href="#">Show more</a>
             </article>
             <aside><img src="Images/img1.png" alt="man"></aside>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="#" class="know-more-btn">
+                        Show More &nbsp;
+                        <i class="fa fa-arrow-right arrow-icon"></i> <!-- Bootstrap icon -->
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     <!-- <section id="sec-2">
@@ -133,97 +144,199 @@
             </article>
         </div>
     </section> -->
+    <div class="container">
+        <div class="text-heading m-auto p-3">
+            <h1>Featured Properties
+                <span>Discover the Finest Selection of Our Featured Properties</span>
+            </h1>
+        </div>
+    </div>
     <section id="sec-3">
         <div class="container">
-            <h1>Featured Properties</h1>
             <div class="cont">
                 <div class="card ">
-                    <img class="card-img-top" src="/Images/Esquire.jpg">
+                    <img class="card-img-top" src="/Images/exotica.png">
                     <div class="card-body px-0 pt-4">
-                        <h5 class="card-title">ESQUIRE</h5>
+                        <h5 class="card-title">Salasar Exotica</h5>
                         <p class="card-text">
                             Esquire Towers, a 30-story architectural marvel, redefines urban living. Located centrally,
                             it offers panoramic views and luxurious residences tailored to modern lifestyles. Amenities
                             like a rooftop pool and fitness center elevate the living experience, making Esquire the
                             epitome of luxury living in the city.
                         </p>
-                        <a href="#" class="btn btn-primary">Show More</a>
+                        <a href="#" class="show-more-btn">
+                            Show More &nbsp;
+                            <i class="fa fa-arrow-right arrow-icon"></i> <!-- Bootstrap icon -->
+                        </a>
                     </div>
                 </div>
                 <div class="card ">
-                    <img class="card-img-top" src="/Images/Esquire.jpg">
+                    <img class="card-img-top" src="/Images/jasmine_res.png">
                     <div class="card-body px-0 pt-4">
-                        <h5 class="card-title">Construction Management</h5>
+                        <h5 class="card-title">Jasmine Residency</h5>
                         <p class="card-text">
                             Esquire Towers, a 30-story architectural marvel, redefines urban living. Located centrally,
                             it offers panoramic views and luxurious residences tailored to modern lifestyles. Amenities
                             like a rooftop pool and fitness center elevate the living experience, making Esquire the
                             epitome of luxury living in the city.
                         </p>
-                        <a href="#" class="btn btn-primary">Show More</a>
+                        <a href="#" class="show-more-btn">
+                            Show More &nbsp;
+                            <i class="fa fa-arrow-right arrow-icon"></i> <!-- Bootstrap icon -->
+                        </a>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="/Images/Esquire.jpg">
+                    <img class="card-img-top" src="/Images/courtyard.png">
                     <div class="card-body px-0 pt-4">
-                        <h5 class="card-title">Construction Management</h5>
+                        <h5 class="card-title">Salasar Courtyard</h5>
                         <p class="card-text">
                             Esquire Towers, a 30-story architectural marvel, redefines urban living. Located centrally,
                             it offers panoramic views and luxurious residences tailored to modern lifestyles. Amenities
                             like a rooftop pool and fitness center elevate the living experience, making Esquire the
                             epitome of luxury living in the city.
                         </p>
-                        <a href="#" class="btn btn-primary">Show More</a>
+                        <a href="#" class="show-more-btn">
+                            Show More &nbsp;
+                            <i class="fa fa-arrow-right arrow-icon"></i> <!-- Bootstrap icon -->
+                        </a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="/Images/Esquire.jpg">
-                    <div class="card-body px-0 pt-4">
-                        <h5 class="card-title">Construction Management</h5>
-                        <p class="card-text">
-                            Esquire Towers, a 30-story architectural marvel, redefines urban living. Located centrally,
-                            it offers panoramic views and luxurious residences tailored to modern lifestyles. Amenities
-                            like a rooftop pool and fitness center elevate the living experience, making Esquire the
-                            epitome of luxury living in the city.
-                        </p>
-                        <a href="#" class="btn btn-primary">Show More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="/Images/Esquire.jpg">
-                    <div class="card-body px-0 pt-4">
-                        <h5 class="card-title">Construction Management</h5>
-                        <p class="card-text">
-                            Esquire Towers, a 30-story architectural marvel, redefines urban living. Located centrally,
-                            it offers panoramic views and luxurious residences tailored to modern lifestyles. Amenities
-                            like a rooftop pool and fitness center elevate the living experience, making Esquire the
-                            epitome of luxury living in the city.
-                        </p>
-                        <a href="#" class="btn btn-primary">Show More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="/Images/Esquire.jpg">
-                    <div class="card-body px-0 pt-4">
-                        <h5 class="card-title">Construction Management</h5>
-                        <p class="card-text">
-                            Esquire Towers, a 30-story architectural marvel, redefines urban living. Located centrally,
-                            it offers panoramic views and luxurious residences tailored to modern lifestyles. Amenities
-                            like a rooftop pool and fitness center elevate the living experience, making Esquire the
-                            epitome of luxury living in the city.
-                        </p>
-                        <a href="#" class="btn btn-primary">Show More</a>
-                    </div>
-                </div>
+
 
             </div>
         </div>
     </section>
-
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-6 text-center">
+                <a href="#" class="btn btn-outline-primary btn rounded-5 btn-coustom-hover"
+                    style="color: rgb(206, 147, 0); border-color: rgb(206, 147, 0);">View All Properties &nbsp;<i
+                        class="fa fa-arrow-right arrow-icon"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-heading m-auto p-3">
+            <h1>Recognitions
+                <span>Awards Received!</span>
+            </h1>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide p-5" data-bs-ride="carousel">
+        <!-- <h1 class=" p-3 text-center text-heading">Recognitions</h1> -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card-img-top"></div>
+                <div class="carousel-caption  text-black-50">
+                    <h5>"PROMINENT BUILDERS & DEVELOPERS."</h5>
+                    <p>Awarded by MCHI in year 2011</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-img-top"></div>
+                <div class="carousel-caption  text-black-50">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-img-top"></div>
+                <div class="carousel-caption  text-black-50">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="text-heading p-3">
+            <h1>EMI Calculator
+                <span>Empower Your Financial Decisions: Calculate Your EMI!</span>
+            </h1>
+        </div>
+    </div>
+    <div class="container p-5 ">
+        <!-- <h1 class="text-heading" style="color: #181818">EMI Calculator</h1> -->
+        <div class="sub-container">
+            <div class="view">
+                <div class="details">
+                    <div>
+                        <div class="detail">
+                            <p style="color: #609fff">Amount</p>
+                            <p id="loan-amt-text" style="color: #609fff"></p>
+                        </div>
+                        <input type="range" id="loan-amount" min="0" max="10000000" step="50000">
+                    </div>
+                    <div>
+                        <div class="detail">
+                            <p style="color: #609fff">Length</p>
+                            <p id="loan-period-text" style="color: #609fff"></p>
+                        </div>
+                        <input type="range" id="loan-period" min="1" max="30" step="1">
+                    </div>
+                    <div>
+                        <div class="detail">
+                            <p style="color: #609fff">% Interest</p>
+                            <p id="interest-rate-text" style="color: #609fff"></p>
+                        </div>
+                        <input type="range" id="interest-rate" min="1" max="15" step="0.5">
+                    </div>
+                </div>
+                <div class="footer">
+                    <p id="price-container"><span id="price">0</span>/mo</p>
+                </div>
+            </div>
+            <div class="breakup">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+        <div>
+            <div class="loan-details">
+                <div class='chart-details'>
+                    <p style="color: #609fff">Principal</p>
+                    <p id="cp" style="color: #130F31; font-size: 17px;"></p>
+                </div>
+                <div class='chart-details'>
+                    <p style="color: #609fff">Interest</p>
+                    <p id="ci" style="color: #130F31; font-size: 17px;"></p>
+                </div>
+                <div class='chart-details'>
+                    <p style="color: #609fff">Total Payable</p>
+                    <p id="ct" style="color: #130F31; font-size: 17px;"></p>
+                </div>
+            </div>
+            <!-- <canvas id="lineChart" height="200px" width="200px"></canvas> -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-heading p-3">
+            <h1>Our Projects
+                <span>Majestic Pictures of Our Work!</span>
+            </h1>
+        </div>
+    </div>
     <section id="sec-4">
         <div class="container">
-            <h1>made with love</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis accusamus autem tenetur vero,
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis accusamus autem tenetur vero,
                 facilis omnis, ullam quis mollitia deleniti ea similique laboriosam numquam ab dignissimos! Ducimus,
                 eveniet at. A debitis eum tenetur dolor magni.</p>
             <div class="filter">
@@ -232,7 +345,7 @@
                 <a href="#">interior design</a>
                 <a href="#">isolation</a>
                 <a href="#">plumping</a>
-            </div>
+            </div> -->
             <div class="cont">
                 <img class="wow animated fadeIn slow" src="Images/gallery1.jpg" alt="pic">
                 <aside>
@@ -244,8 +357,26 @@
             </div>
         </div>
     </section>
+    <section id="statsSection">
+        <div class="container p-5">
+            <div class="row text-center p-5">
+                <div class="col-md-4">
+                    <h2 class="display-3 counter" data-count="39">0</h2>
+                    <p class="lead">Building Real Estate projects since</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="display-3 counter" data-count="50">0</h2>
+                    <p class="lead">Square Feet of Realty</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="display-3 counter" data-count="8000">0</h2>
+                    <p class="lead">Happy Families</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="sec-5">
-        <div class="container">
+        <!-- <div class="container">
             <h1>customer reviews</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis accusamus autem tenetur vero,
                 facilis omnis, ullam quis mollitia deleniti ea similique laboriosam numquam ab dignissimos! Ducimus,
@@ -288,11 +419,12 @@
                     </figure>
                 </article>
             </div>
-        </div>
+        </div> -->
         <div class="contactUs">
             <div class="container">
                 <aside>
-                    <h1>do you have any questions?</h1>
+                    <h1>How can we assist you with your project?</h1>
+                    <br>
                     <h2>feel free to contact us!</h2>
                 </aside>
                 <form id="form" action="/" method="">
@@ -306,16 +438,16 @@
         </div>
     </section>
     <section id="sec-6">
-        <div class="container">
+        <div class="container px-3">
             <div class="about">
                 <h1>About Company</h1>
                 <h2>
-                    CONSTRUCTION
-                    <p>Lorem ipsum dolor sit amit.</p>
+                    SALASAR BUILDERS
+                    <p>HELPING YOU BUILD LEGACIES.</p>
                 </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eius nisi repudiandae ipsam
-                    pariatur, quos perspiciatis eaque officia rerum odio modi sed fugiat mollitia? Rerum, architecto
-                    obcaecati!</p>
+                <p>Building Legacies One Name at a Time. Constructing identities that endure. From projects to
+                    properties, our expert team erects names with strength and distinction. Lay the foundation for
+                    success with Salasar Name Builder.</p>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -323,39 +455,269 @@
                 <a href="#"><i class="fab fa-youtube-square"></i></a>
             </div>
             <div class="links">
-                <h1>Explor links</h1>
-                <a href="#">Our services</a>
-                <a href="#">Meet our team</a>
-                <a href="#">Forum</a>
-                <a href="#">Help center</a>
+                <h1>Quick Links</h1>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Properties</a>
                 <a href="#">Contact Us</a>
                 <a href="#">Privacy Policy</a>
-                <a href="#">Our terms</a>
-                <a href="#">Site map</a>
             </div>
-            <div class="posts">
-                <h1>Latest posts</h1>
+            <!-- <div class="posts">
+                <h1>Our Top Projects</h1>
                 <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-            </div>
+                <a href="#"><span>20<br>MAY</span>Lorem ipsum dolor sit stiae tempora</a>
+                <a href="#"><span>20<br>SEP</span>Lorem ipsum dolor sit stiae tempora</a>
+            </div> -->
             <div class="contact">
                 <h1>Contact us</h1>
-                <p>123 New Line, London UK</p>
-                <p>Hello@contact-us.com</p>
-                <p>+44 00 00 1234<br>+44 00 00 1234</p>
+                <p>SALASAR BUSINESS HOUSE,
+                    GROUND AND FIRST FLOOR
+                    SHREEVALLABH, BEHIND D’MART,
+                    NEAR SALASAR BUSINESS PARK,
+                    BHAYANDER (WEST), THANE - 401101</p>
+                <div>
+                    <p> <i class="fas fa-envelope phone-icon "></i> director@salasarbuilders.com</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-phone-alt phone-icon "></i> +91 22 2814 3400</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-phone-alt phone-icon"></i> +91 22 2804 9600</p>
+                </div>
 
             </div>
         </div>
     </section>
-    <section id="sec-7">
-        <div class="container">
-            <p>Copyright @2022 | Designed by <span>Web Technologies Team</span></p>
-        </div>
-    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function startCounters() {
+                const counters = document.querySelectorAll('.counter');
+                const speed = 1000;
 
+                counters.forEach((counter, index) => {
+                    const target = parseInt(counter.dataset.count);
+                    let suffix = '';
+
+                    if (index === 0) {
+                        suffix = '+ Yrs';
+
+                    } else if (index === Math.floor(counters.length / 2)) {
+                        suffix = 'M+';
+                    }
+                    else {
+                        suffix = '+';
+                    }
+
+                    const updateCount = () => {
+                        const count = +counter.innerText;
+                        const inc = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = target + suffix;
+                        }
+                    };
+
+                    updateCount();
+                });
+            }
+
+            function handleIntersect(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }
+
+            const observer = new IntersectionObserver(handleIntersect, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // Trigger when 50% of the element is visible
+            });
+
+            observer.observe(document.getElementById('statsSection'));
+        });
+
+        var P, R, N, pie, line;
+        var loan_amt_slider = document.getElementById("loan-amount");
+        var int_rate_slider = document.getElementById("interest-rate");
+        var loan_period_slider = document.getElementById("loan-period");
+
+        // update loan amount
+        loan_amt_slider.addEventListener("input", (self) => {
+            document.querySelector("#loan-amt-text").innerText =
+                parseInt(self.target.value).toLocaleString("en-IN") + "₹";
+            P = parseFloat(self.target.value);
+            displayDetails();
+        });
+
+        // update Rate of Interest
+        int_rate_slider.addEventListener("input", (self) => {
+            document.querySelector("#interest-rate-text").innerText =
+                self.target.value + "%";
+            R = parseFloat(self.target.value);
+            displayDetails();
+        });
+
+        // update loan period
+        loan_period_slider.addEventListener("input", (self) => {
+            document.querySelector("#loan-period-text").innerText =
+                self.target.value + " years";
+            N = parseFloat(self.target.value);
+            displayDetails();
+        });
+
+        // calculate total Interest payable
+        function calculateLoanDetails(p, r, emi) {
+            let totalInterest = 0;
+            let yearlyInterest = [];
+            let yearPrincipal = [];
+            let years = [];
+            let year = 1;
+            let [counter, principal, interes] = [0, 0, 0];
+            while (p > 0) {
+                let interest = parseFloat(p) * parseFloat(r);
+                p = parseFloat(p) - (parseFloat(emi) - interest);
+                totalInterest += interest;
+                principal += parseFloat(emi) - interest;
+                interes += interest;
+                if (++counter == 12) {
+                    years.push(year++);
+                    yearlyInterest.push(parseInt(interes));
+                    yearPrincipal.push(parseInt(principal));
+                    counter = 0;
+                }
+            }
+            line.data.datasets[0].data = yearPrincipal;
+            line.data.datasets[1].data = yearlyInterest;
+            line.data.labels = years;
+            return totalInterest;
+        }
+
+        // calculate details
+        function displayDetails() {
+            let r = parseFloat(R) / 1200;
+            let n = parseFloat(N) * 12;
+
+            let num = parseFloat(P) * r * Math.pow(1 + r, n);
+            let denom = Math.pow(1 + r, n) - 1;
+            let emi = parseFloat(num) / parseFloat(denom);
+
+            let payabaleInterest = calculateLoanDetails(P, r, emi);
+
+            let opts = '{style: "decimal", currency: "US"}';
+
+            document.querySelector("#cp").innerText =
+                parseFloat(P).toLocaleString("en-IN", opts) + "₹";
+
+            document.querySelector("#ci").innerText =
+                parseFloat(payabaleInterest).toLocaleString("en-IN", opts) + "₹";
+
+            document.querySelector("#ct").innerText =
+                parseFloat(parseFloat(P) + parseFloat(payabaleInterest)).toLocaleString(
+                    "en-IN",
+                    opts
+                ) + "₹";
+
+            document.querySelector("#price").innerText =
+                parseFloat(emi).toLocaleString("en-IN", opts) + "₹";
+
+            pie.data.datasets[0].data[0] = P;
+            pie.data.datasets[0].data[1] = payabaleInterest;
+            pie.update();
+            line.update();
+        }
+
+        // Initialize everything
+        function initialize() {
+            document.querySelector("#loan-amt-text").innerText =
+                parseInt(loan_amt_slider.value).toLocaleString("en-IN") + " ₹";
+            P = parseFloat(document.getElementById("loan-amount").value);
+
+            document.querySelector("#interest-rate-text").innerText =
+                int_rate_slider.value + "%";
+            R = parseFloat(document.getElementById("interest-rate").value);
+
+            document.querySelector("#loan-period-text").innerText =
+                loan_period_slider.value + " years";
+            N = parseFloat(document.getElementById("loan-period").value);
+
+            line = new Chart(document.getElementById("lineChart"), {
+                data: {
+                    datasets: [
+                        {
+                            type: "line",
+                            label: "Yearly Principal paid",
+                            borderColor: "rgb(54, 162, 235)",
+                            data: []
+                        },
+                        {
+                            type: "line",
+                            label: "Yearly Interest paid",
+                            borderColor: "rgb(255, 99, 132)",
+                            data: []
+                        }
+                    ],
+                    labels: []
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Yearly Payment Breakdown"
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                color: "grey",
+                                display: true,
+                                text: "Years Passed"
+                            }
+                        },
+                        y: {
+                            title: {
+                                color: "grey",
+                                display: true,
+                                text: "Money in Rs."
+                            }
+                        }
+                    }
+                }
+            });
+
+            pie = new Chart(document.getElementById("pieChart"), {
+                type: "doughnut",
+                data: {
+                    labels: ["Principal", "Interest"],
+                    datasets: [
+                        {
+                            label: "Home Loan Details",
+                            data: [0, 0],
+                            backgroundColor: ["rgb(54, 162, 235)", "rgb(255, 99, 132)"],
+                            hoverOffset: 4
+                        }
+                    ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Payment Breakup"
+                        }
+                    }
+                }
+            });
+            displayDetails();
+        }
+        initialize();
+
+
+    </script>
     <script src="js/wow.min.js"></script>
     <script> new WOW().init();</script>
     <script src="js/bootstrap.bundle.min.js"></script>

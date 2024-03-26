@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classy Property Cards</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/properties.css" rel="stylesheet" type="text/css">
+    <script defer src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .card-section {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="sec-0">
+
+        <header>
+            <div class="hide" id="searchBar">
+                <input type="search" name="searchBox" id="searchBox"
+                    placeholder="Type your search here..    Press [Esc] to exist">
+            </div>
+            <div class="container">
+                <h1>
+                    <img style="width: 150px;" src="/Images/Salasar Logo.png">
+                </h1>
+                <label for="menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="menu">
+                <nav>
+                    <a href="/index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="/properties.html">Properties</a>
+                    <a href="#">Things to Know</a>
+                    <a href="#">Contact</a>
+                    <div class="social" style="display:flex; vertical-align:top;">
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <article>
+            <div class="container" id="header-section">
+                <h2 class="text-center">Explore Our Properties<br>
+                </h2>
+            </div>
+        </article>
+    </section>
+    <section id="sec-3">
+        <div class="container">
+            <div class="filter-container">
+                <div style="width:100%; margin-bottom:40px;display:flex;">
+                    <h5 class="mb-0 mr-3 flex-row" style="display:flex; gap:10px">Filters &nbsp; <i
+                            class="fas fa-filter mr-2"></i></h5>
+                    <div class="search-container">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-input" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text " style="background-color:#d34040">
+                                    <i class="fas fa-search" style="color:#f7f7f7"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-filter">
+                    <h5 class="mb-0 mr-3">Choose Location &nbsp; <i class="fas fa-map-marker-alt mr-2"></i></h5>
+                    <br />
+                    <div class="flex-row align-items-center justify-content-center text-black">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input location-filter" type="checkbox" id="delhiCheckbox"
+                                value="delhi">
+                            <label class="form-check-label" for="delhiCheckbox">Delhi</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input location-filter" type="checkbox" id="puneCheckbox"
+                                value="pune">
+                            <label class="form-check-label" for="puneCheckbox">Pune</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input location-filter" type="checkbox" id="nagpurCheckbox"
+                                value="nagpur">
+                            <label class="form-check-label" for="nagpurCheckbox">Nagpur</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="status-filter">
+                    <h5 class="mb-0 mr-3">Choose Status &nbsp; <i class="fas fa-info-circle mr-2"></i></h5>
+                    <br />
+                    <div class="flex-row align-items-center justify-content-center text-black">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input status-filter ongoing-checkbox" type="checkbox"
+                                id="ongoingCheckbox" value="ongoing">
+                            <label class="form-check-label" for="ongoingCheckbox">Ongoing</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input status-filter completed-checkbox" type="checkbox"
+                                id="completedCheckbox" value="completed">
+                            <label class="form-check-label" for="completedCheckbox">Completed</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input status-filter onhold-checkbox" type="checkbox"
+                                id="onholdCheckbox" value="onhold">
+                            <label class="form-check-label" for="onholdCheckbox">On Hold</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="cont">
+                    <div class="card" data-location="delhi" data-status="on-going">
+                        <img class="card-img-top" src="/Images/exotica.png" alt="Salasar Exotica">
+                        <div class="card-body">
+                            <h5 class="card-title">Salasar Exotica</h5>
+                            <p class="status-tag">Status: On Going</p>
+                            <a href="#" class="show-more-btn">Show More</a>
+                        </div>
+                    </div>
+                    <div class="card" data-location="pune" data-status="completed">
+                        <img class="card-img-top" src="/Images/jasmine_res.png" alt="Jasmine Residency">
+                        <div class="card-body">
+                            <h5 class="card-title">Jasmine Residency</h5>
+                            <p class="status-tag">Status: Completed</p>
+                            <a href="#" class="show-more-btn">Show More</a>
+                        </div>
+                    </div>
+                    <div class="card" data-location="nagpur" data-status="on-hold">
+                        <img class="card-img-top" src="/Images/courtyard.png" alt="Salasar Courtyard">
+                        <div class="card-body">
+                            <h5 class="card-title">Salasar Courtyard</h5>
+                            <p class="status-tag">Status: On Hold</p>
+                            <a href="#" class="show-more-btn">Show More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-6">
+        <div class="container px-3">
+            <div class="about">
+                <h1>About Company</h1>
+                <h2>
+                    SALASAR BUILDERS
+                    <p>HELPING YOU BUILD LEGACIES.</p>
+                </h2>
+                <p>Building Legacies One Name at a Time. Constructing identities that endure. From projects to
+                    properties, our expert team erects names with strength and distinction. Lay the foundation for
+                    success with Salasar Name Builder.</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Properties</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="contact">
+                <h1>Contact us</h1>
+                <p>SALASAR BUSINESS HOUSE,
+                    GROUND AND FIRST FLOOR
+                    SHREEVALLABH, BEHIND D’MART,
+                    NEAR SALASAR BUSINESS PARK,
+                    BHAYANDER (WEST), THANE - 401101</p>
+                <div>
+                    <p> <i class="fas fa-envelope phone-icon "></i> director@salasarbuilders.com</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-phone-alt phone-icon "></i> +91 22 2814 3400</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-phone-alt phone-icon"></i> +91 22 2804 9600</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        const searchInput = document.querySelector('.search-input');
+        const locationCheckboxes = document.querySelectorAll('.location-filter');
+        const statusCheckboxes = document.querySelectorAll('.status-filter');
+        const cards = document.querySelectorAll('.card');
+
+        function applyFilters() {
+            const searchQuery = searchInput.value.toLowerCase();
+            const selectedLocations = Array.from(locationCheckboxes)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value.toLowerCase());
+
+            const selectedStatuses = Array.from(statusCheckboxes)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value.toLowerCase());
+
+            cards.forEach(card => {
+                const location = card.getAttribute('data-location').toLowerCase();
+                const status = card.getAttribute('data-status').toLowerCase();
+                const title = card.querySelector('.card-title').innerText.toLowerCase();
+                const cardTextElement = card.querySelector('.card-text');
+                const cardText = cardTextElement ? cardTextElement.innerText.toLowerCase() : ''; // Check if card-text element exists
+                const matchesSearch = title.includes(searchQuery) || cardText.includes(searchQuery);
+                const matchesLocation = selectedLocations.length === 0 || selectedLocations.includes(location);
+                const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status.replace('-', ''));
+
+
+                if (matchesSearch && matchesLocation && matchesStatus) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', applyFilters);
+        locationCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', applyFilters);
+        });
+        statusCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', applyFilters);
+        });
+
+        applyFilters();
+
+    </script>
+
+
+</body>
+
+</html>

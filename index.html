@@ -46,10 +46,10 @@
                 <input type="checkbox" id="menu">
                 <nav>
                     <a href="/index.html">Home</a>
-                    <a href="#">About</a>
+                    <a href="/about.html">About</a>
                     <a href="/properties.html">Properties</a>
-                    <a href="#">Things to Know</a>
-                    <a href="#">Contact</a>
+                    <!-- <a href="#">Things to Know</a> -->
+                    <a href="/contact.html">Contact</a>
                     <div class="social" style="display:flex; vertical-align:top;">
                         <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -241,7 +241,7 @@
                     <p>Awarded by MCHI in year 2011</p>
                 </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <div class="card-img-top"></div>
                 <div class="carousel-caption  text-black-50">
                     <h5>Second slide label</h5>
@@ -254,9 +254,9 @@
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -265,7 +265,7 @@
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
     </div>
     <div class="container">
         <div class="text-heading p-3">
@@ -347,12 +347,12 @@
                 <a href="#">plumping</a>
             </div> -->
             <div class="cont">
-                <img class="wow animated fadeIn slow" src="Images/gallery1.jpg" alt="pic">
+                <img class="wow animated fadeIn slow" src="Images/exotica-full.jpg" alt="pic">
                 <aside>
-                    <img src="Images/gallery3.jpg" alt="pic" class="wow animated flipInX delay-1s">
-                    <img src="Images/gallery2.jpg" alt="pic" class="wow animated flipInX delay-1s slower">
-                    <img src="Images/gallery4.jpg" alt="pic" class="wow animated flipInX delay-2s">
-                    <img src="Images/gallery5.jpg" alt="pic" class="wow animated flipInX delay-2s slower">
+                    <img src="Images/jasmine_res.png" alt="pic" class="wow animated flipInX delay-1s">
+                    <img src="Images/kasturi.png" alt="pic" class="wow animated flipInX delay-1s slower">
+                    <img src="/Images/courtyard.png" alt="pic" class="wow animated flipInX delay-2s">
+                    <img src="/Images/Esquire.jpg" alt="pic" class="wow animated flipInX delay-2s slower">
                 </aside>
             </div>
         </div>
@@ -376,50 +376,7 @@
         </div>
     </section>
     <section id="sec-5">
-        <!-- <div class="container">
-            <h1>customer reviews</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis accusamus autem tenetur vero,
-                facilis omnis, ullam quis mollitia deleniti ea similique laboriosam numquam ab dignissimos! Ducimus,
-                eveniet at. A debitis eum tenetur dolor magni.</p>
-            <div class="cont">
-                <article class="quoteblock">
-                    <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote2.png" alt="quote mark"></p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum id inventore facilis
-                            laboriosam est possimus explicabo quis ipsa, perferendis nam ratiendus neque earum iure
-                            maxime non soluta voluptates deleniti provident! Commodi, eveniet?</p>
-                    </div>
-                    <figure>
-                        <img class="customer" src="Images/cust1.png" alt="customer1">
-                        <figcaption>John smith</figcaption>
-                    </figure>
-                </article>
-                <article class="quoteblock">
-                    <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote1.png" alt="quote mark"></p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum id inventore facilis
-                            laboriosam est possimus explicabo quis ipsa, perferendis nam ratiendus neque earum iure
-                            maxime non soluta voluptates deleniti provident! Commodi, eveniet?</p>
-                    </div>
-                    <figure>
-                        <img class="customer" src="Images/cust1.png" alt="customer1">
-                        <figcaption>John smith</figcaption>
-                    </figure>
-                </article>
-                <article class="quoteblock">
-                    <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote2.png" alt="quote mark"></p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum id inventore facilis
-                            laboriosam est possimus explicabo quis ipsa, perferendis nam ratiendus neque earum iure
-                            maxime non soluta voluptates deleniti provident! Commodi, eveniet?</p>
-                    </div>
-                    <figure>
-                        <img class="customer" src="Images/cust1.png" alt="customer1">
-                        <figcaption>John smith</figcaption>
-                    </figure>
-                </article>
-            </div>
-        </div> -->
+
         <div class="contactUs">
             <div class="container">
                 <aside>
@@ -488,11 +445,14 @@
             </div>
         </div>
     </section>
+    <footer>
+        <p>Copyright &copy; 2024 &nbsp;<img src="/Images/Salasar Logo.png" alt="logo"> &nbsp; All Rights Reserved.</p>
+    </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             function startCounters() {
                 const counters = document.querySelectorAll('.counter');
-                const speed = 1000;
+                const speed = 100;
 
                 counters.forEach((counter, index) => {
                     const target = parseInt(counter.dataset.count);

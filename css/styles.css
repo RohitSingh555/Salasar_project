@@ -779,13 +779,16 @@ h1 span {
 #sec-5 .contactUs form {
     padding: 10px 0px 1.7rem;
     position: relative;
+    margin-top: 20px;
 }
 
 #sec-5 .contactUs form input {
     padding: 6px 15px;
-    margin: 0px 5px 10px 0px;
+    margin: 0px 5px 5px 0px;
     border-radius: 6px;
     border-style: none;
+    width: 100%;
+    font-size: 18px;
     color: var(--textaccent3);
 }
 
@@ -1003,6 +1006,43 @@ h1 span {
         align-items: center;
     }
 
+    .sec-title {
+        padding-top: 30px !important;
+    }
+
+    .sec-title h2 {
+        font-size: 1rem !important;
+    }
+
+    .maps-google {
+        padding: 15px;
+    }
+
+    .maps-google iframe {
+        border-radius: 20px;
+    }
+
+    .hero-img-box,
+    .delivered-meals,
+    #sec-6 .about p {
+        display: none;
+    }
+
+    .overview-section .p-description {
+        font-size: 17px;
+        font-weight: 600;
+        padding: 8px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+
+    .conti {
+        grid-template-columns: 1fr !important;
+    }
+
     #sec-6 .about h2,
     #sec-5 .contactUs h2 {
         font-size: 1.5rem;
@@ -1014,8 +1054,12 @@ h1 span {
 
     #sec-6 .about>p,
     #sec-6 .contact p {
-        font-size: 12px;
+        font-size: 13px;
         color: rgb(211, 211, 211);
+    }
+
+    #sec-6 .links a {
+        font-size: 1.2rem;
     }
 
     #sec-6 h1 {
@@ -1036,7 +1080,7 @@ h1 span {
     }
 
     #sec-0 article h2 {
-        font-size: 25px;
+        font-size: 32px;
     }
 
     #sec-1 a {
@@ -1092,17 +1136,23 @@ h1 span {
         width: 100% !important;
     }
 
+    .margin-right-btn {
+        font-size: 14px !important;
+        padding: 8px 14px !important;
+    }
+
     #sec-6 .container {
         row-gap: 40px;
     }
 
     #sec-0 article h2 span {
         color: var(--haccent);
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     #header-section p {
         width: 100% !important;
+        font-size: 1.2rem;
     }
 }
 
@@ -1726,4 +1776,19 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .display-3 {
     color: #d34040;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #868c96;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+footer img {
+    width: 50px;
 }

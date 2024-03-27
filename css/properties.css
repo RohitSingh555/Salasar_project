@@ -126,3 +126,18 @@
         margin-top: 0;
     }
 }
+
+.conti {
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: baseline; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+
+}
+
+.conti .card {
+    width: 100% !important;
+}

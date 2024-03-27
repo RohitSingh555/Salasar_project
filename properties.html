@@ -37,10 +37,10 @@
                 <input type="checkbox" id="menu">
                 <nav>
                     <a href="/index.html">Home</a>
-                    <a href="#">About</a>
+                    <a href="/about.html">About</a>
                     <a href="/properties.html">Properties</a>
-                    <a href="#">Things to Know</a>
-                    <a href="#">Contact</a>
+                    <!-- <a href="#">Things to Know</a> -->
+                    <a href="/contact.html">Contact</a>
                     <div class="social" style="display:flex; vertical-align:top;">
                         <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -117,34 +117,76 @@
 
             </div>
             <div class="container">
-                <div class="cont">
-                    <div class="card" data-location="delhi" data-status="on-going">
+                <div class="conti">
+                    <div class="card shadow" data-location="delhi" data-status="on-going"
+                        onclick="window.location.href='/properties/exotica.html'">
                         <img class="card-img-top" src="/Images/exotica.png" alt="Salasar Exotica">
                         <div class="card-body">
                             <h5 class="card-title">Salasar Exotica</h5>
-                            <p class="status-tag">Status: On Going</p>
-                            <a href="#" class="show-more-btn">Show More</a>
+                            <div class="d-flex justify-content-between">
+                                <p class="location-title">
+                                    <i class="fas fa-map-marker-alt"></i> Delhi
+                                </p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> On Going</p>
+                            </div>
+                            <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="card" data-location="pune" data-status="completed">
+                    <div class="card shadow" data-location="pune" data-status="completed">
                         <img class="card-img-top" src="/Images/jasmine_res.png" alt="Jasmine Residency">
                         <div class="card-body">
                             <h5 class="card-title">Jasmine Residency</h5>
-                            <p class="status-tag">Status: Completed</p>
-                            <a href="#" class="show-more-btn">Show More</a>
+                            <div class="d-flex justify-content-between">
+                                <p class="location-title">
+                                    <i class="fas fa-map-marker-alt"></i> Pune
+                                </p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Completed</p>
+                            </div>
+                            <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="card" data-location="nagpur" data-status="on-hold">
+                    <div class="card shadow" data-location="nagpur" data-status="on-hold">
                         <img class="card-img-top" src="/Images/courtyard.png" alt="Salasar Courtyard">
                         <div class="card-body">
                             <h5 class="card-title">Salasar Courtyard</h5>
-                            <p class="status-tag">Status: On Hold</p>
-                            <a href="#" class="show-more-btn">Show More</a>
+                            <div class="d-flex justify-content-between">
+                                <p class="location-title">
+                                    <i class="fas fa-map-marker-alt"></i> Nagpur
+                                </p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> On Hold</p>
+                            </div>
+                            <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card shadow" data-location="nagpur" data-status="completed">
+                        <img class="card-img-top" src="/Images/kasturi.png" alt="Salasar Kasturi">
+                        <div class="card-body">
+                            <h5 class="card-title">Salasar Kasturi</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="location-title">
+                                    <i class="fas fa-map-marker-alt"></i> Delhi
+                                </p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Completed</p>
+                            </div>
+                            <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card shadow" data-location="nagpur" data-status="on-hold">
+                        <img class="card-img-top" src="/Images/Esquire.jpg" alt="Salasar Esquire">
+                        <div class="card-body">
+                            <h5 class="card-title">Salasar Esquire</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="location-title">
+                                    <i class="fas fa-map-marker-alt"></i> Nagpur
+                                </p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> On Hold</p>
+                            </div>
+                            <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
     </section>
     <section id="sec-6">
         <div class="container px-3">
@@ -191,6 +233,11 @@
             </div>
         </div>
     </section>
+    <footer>
+        <p>Copyright &copy; 2024 &nbsp;<img src="/Images/Salasar Logo.png" alt="logo"> &nbsp; All Rights Reserved.</p>
+    </footer>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

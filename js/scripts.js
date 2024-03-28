@@ -12,7 +12,7 @@ function criteria() {
     let state = true;
     
     email = email.trim().toLowerCase();
-    // msg.innerHTML = '';
+    msg.innerHTML = '';
 
     if(firstChar=='@' || firstChar=='.' ||firstChar=='_' || firstChar=='-' ||  !isNaN(firstChar)){
         msg.innerHTML = "invalid fisrt character for Email address";
@@ -54,12 +54,12 @@ function criteria() {
     }
 
     if (state == true) {
-        // msg.innerHTML = 'Thank You :) Your Message has been submitted successfully. <br> You shall here form us very soon!';
+        msg.innerHTML = 'Thank You :) Your Message has been submitted successfully. <br> You shall here form us very soon!';
         document.location.href = '/thankyou.html'
         document.getElementById('email').classList.remove("invalid")
     }
     else {
-        // msg.innerHTML = 'Check the data you have entered and Try again!';
+        msg.innerHTML = 'Check the data you have entered and Try again!';
         document.getElementById('email').classList.add("invalid")
     }   
 }    

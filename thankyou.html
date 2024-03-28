@@ -31,10 +31,10 @@
                 <input type="checkbox" id="menu">
                 <nav>
                     <a href="/index.html">Home</a>
-                    <a href="#">About</a>
+                    <a href="/about.html">About</a>
                     <a href="/properties.html">Properties</a>
                     <!-- <a href="#">Things to Know</a> -->
-                    <a href="#">Contact</a>
+                    <a href="/contact.html">Contact</a>
                     <div class="social" style="display:flex; vertical-align:top;">
                         <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -42,16 +42,26 @@
                 </nav>
             </div>
         </header>
-        <article>
-            <div class="container " id="header-section">
-                <h2 class="text-center">Contact Us<br>
-                </h2>
-            </div>
-        </article>
     </section>
-    <div>
-        <h1 class="text-center p-5">Thanks for submitting the form !</h1>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center">
+            <header class="site-header">
+                <h1 class="site-header__title display-1 fw-bold text-success mb-4">Thank You for Contacting Salasar!
+                </h1>
+            </header>
+
+            <div class="main-content fw-bold">
+                <i class="fa fa-check pb-5" id="checkmark" style="font-size:100px; color:rgb(47, 122, 47);"></i>
+                <p class="main-content__body fs-5" data-lead-id="main-content-body">Your message has been received, We
+                    appreciate you reaching out to
+                    us.</p>
+                <p class="main-content__body fs-5" data-lead-id="main-content-body">Thank you for considering us. We
+                    look forward to connecting with you soon.</p>
+                <a href="/" class="btn btn-outline-primary mt-4 btn-custom-ty">Back to Home Page</a>
+            </div>
+        </div>
     </div>
+
     <section id="sec-6">
         <div class="container px-3">
             <div class="about">
@@ -97,6 +107,19 @@
     <footer>
         <p>Copyright &copy; 2024 &nbsp;<img src="/Images/Salasar Logo.png" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
+    <style>
+        .btn-custom-ty {
+            width: 30%;
+            background-color: #fdfdfd;
+            color: rgb(81, 156, 253);
+            border: 2px solid #379ff5;
+        }
+
+        .btn-custom-ty:hover {
+            background-color: #2298ff;
+            color: white;
+        }
+    </style>
 </body>
 
 </html>

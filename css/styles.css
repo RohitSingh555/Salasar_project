@@ -1029,6 +1029,10 @@ h1 span {
         align-items: center;
     }
 
+    .btn-custom-ty {
+        width: 100% !important;
+    }
+
     #getintouch {
         flex-direction: column !important;
     }

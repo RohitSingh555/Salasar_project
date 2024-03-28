@@ -12,7 +12,7 @@ function criteria() {
     let state = true;
     
     email = email.trim().toLowerCase();
-    msg.innerHTML = '';
+    // msg.innerHTML = '';
 
     if(firstChar=='@' || firstChar=='.' ||firstChar=='_' || firstChar=='-' ||  !isNaN(firstChar)){
         msg.innerHTML = "invalid fisrt character for Email address";

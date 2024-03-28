@@ -65,7 +65,6 @@ function criteria() {
 }    
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
     criteria();
 });
 

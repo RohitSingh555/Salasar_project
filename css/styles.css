@@ -998,12 +998,60 @@ h1 span {
     font-weight: 600;
 }
 
+.scrollToTopBtn {
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0)
+}
+
 /*MEDIA QUERRIES*/
 /*Smart phones */
 @media (max-width: 806px) {
     .sub-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    #getintouch {
+        flex-direction: column !important;
+    }
+
+    .card-getintouch {
+        width: 100% !important;
+    }
+
+    .contactus-div {
+        width: 100% !important;
+    }
+
+    #form textarea {
+        margin-bottom: 35px;
+    }
+
+    .filter-container #filter-text {
+        flex-direction: column;
+    }
+
+    .location-filter,
+    .status-filter {
+        margin-bottom: 20px;
     }
 
     .sec-title {

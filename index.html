@@ -235,7 +235,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="card-img-top"></div>
+                <div class="card-img-top container"></div>
                 <div class="carousel-caption  text-black-50">
                     <h5>"PROMINENT BUILDERS & DEVELOPERS."</h5>
                     <p>Awarded by MCHI in year 2011</p>
@@ -384,10 +384,12 @@
                     <br>
                     <h2>feel free to contact us!</h2>
                 </aside>
-                <form id="form" action="/" method="">
+                <form id="form" data-netlify="true" action="/thankyou.html" method="POST">
                     <input type="text" name="name" id="" placeholder="Name" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
-                    <input type="text" name="message" id="" placeholder="Message" required>
+                    <input type="phone" name="phone" id="phone" placeholder="Phone" required>
+                    <textarea class="form-control" name="message" id="message" placeholder="Message" required
+                        style="width: 100%; margin-right: 15px;resize:none; height: 150px; border:none; font-size:17px;"></textarea>
                     <input type="submit" value="submit" id="submit">
                     <p id="msg"></p>
                 </form>
@@ -408,16 +410,16 @@
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+
                 <a href="#"><i class="fab fa-youtube-square"></i></a>
             </div>
             <div class="links">
                 <h1>Quick Links</h1>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Properties</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Privacy Policy</a>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About Us</a>
+                <a href="/properties.html">Properties</a>
+                <a href="/contact.html">Contact Us</a>
+                <a href="/index.html">Privacy Policy</a>
             </div>
             <!-- <div class="posts">
                 <h1>Our Top Projects</h1>
@@ -427,11 +429,8 @@
             </div> -->
             <div class="contact">
                 <h1>Contact us</h1>
-                <p>SALASAR BUSINESS HOUSE,
-                    GROUND AND FIRST FLOOR
-                    SHREEVALLABH, BEHIND D’MART,
-                    NEAR SALASAR BUSINESS PARK,
-                    BHAYANDER (WEST), THANE - 401101</p>
+                <p>Salasar Business House, Ground and First Floor Shreevallabh, Behind D'Mart, Near Salasar Business
+                    Park, Bhayander (West), Thane - 401101</p>
                 <div>
                     <p> <i class="fas fa-envelope phone-icon "></i> director@salasarbuilders.com</p>
                 </div>
@@ -448,7 +447,32 @@
     <footer>
         <p>Copyright &copy; 2024 &nbsp;<img src="/Images/Salasar Logo.png" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
+    <button class="scrollToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
+        var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+        var rootElement = document.documentElement
+
+        function handleScroll() {
+            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+            if ((rootElement.scrollTop / scrollTotal) > 0.15) {
+                scrollToTopBtn.classList.add("showBtn")
+            } else {
+                scrollToTopBtn.classList.remove("showBtn")
+            }
+        }
+
+        function scrollToTop() {
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop)
+        document.addEventListener("scroll", handleScroll)
+
         document.addEventListener("DOMContentLoaded", function () {
             function startCounters() {
                 const counters = document.querySelectorAll('.counter');
@@ -472,19 +496,12 @@
                         const count = +counter.innerText;
                         const inc = target / speed;
 
-                        if (count < target) {
-                            counter.innerText = Math.ceil(count + inc);
-                            setTimeout(updateCount, 1);
-                        } else {
+                        if (count < target) { counter.innerText = Math.ceil(count + inc); setTimeout(updateCount, 1); } else {
                             counter.innerText = target + suffix;
                         }
-                    };
-
-                    updateCount();
+                    }; updateCount();
                 });
-            }
-
-            function handleIntersect(entries) {
+            } function handleIntersect(entries) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         startCounters();

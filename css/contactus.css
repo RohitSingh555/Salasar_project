@@ -209,7 +209,8 @@ textarea.input {
 }
 
 .social-media p {
-    color: #333;
+    color: #149279;
+    font-weight: 600;
 }
 
 .social-icons {
@@ -315,11 +316,12 @@ textarea.input {
     .text,
     .information,
     .social-media p {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 
     .title {
-        font-size: 1.15rem;
+        font-size: 1.55rem;
+        font-weight: 600;
     }
 
     .social-icons a {
@@ -333,7 +335,13 @@ textarea.input {
     }
 
     .input {
-        padding: 0.45rem 1.2rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .input-container label {
+        font-size: 1.3rem;
+
     }
 
     .btn {

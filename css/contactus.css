@@ -188,6 +188,10 @@ textarea.input {
     margin: 1.5rem 0 2rem 0;
 }
 
+#sec-0 article h2 {
+    width: 100% !important;
+}
+
 .information {
     display: flex;
     color: #555;

@@ -133,20 +133,27 @@ body {
     margin-bottom: 30px;
 }
 
+#sec-0 article h2 {
+    width: 100% !important;
+}
+
 .line {
     position: absolute;
     top: 50%;
     width: 45%;
     height: 2px;
-    background-color: #609fff;
+
+
 }
 
 .line.before {
     left: 0;
+    background: linear-gradient(to right, #ffffff, #a3ccff, #609fff);
 }
 
 .line.after {
     right: 0;
+    background: linear-gradient(to left, #ffffff, #a3ccff, #609fff);
 }
 
 .custom {

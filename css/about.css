@@ -221,6 +221,10 @@ img {
     width: 520px;
 }
 
+#sec-0 article h2 {
+    width: 100% !important;
+}
+
 .about-section .image-column .image-1 {
     position: relative;
 }

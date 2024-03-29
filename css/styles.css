@@ -337,7 +337,7 @@ body {
 #sec-0 article a {
     color: var(--haccent2);
     display: inline-block;
-    padding: 4px 10px;
+    padding: 6px 26px;
     /* margin-left: 18px; */
     border: solid 1.5px var(--haccent2);
     text-decoration: none;
@@ -362,7 +362,7 @@ body {
 }
 
 #sec-1 article h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: rgb(206, 147, 0);
     font-weight: 400;
     text-transform: uppercase;
@@ -859,6 +859,8 @@ h1 span {
 
 #sec-6 .about>p {
     margin-bottom: 1.5rem;
+    font-size: 17px;
+
 }
 
 #sec-6 .about a {
@@ -947,6 +949,8 @@ h1 span {
     display: flex;
     gap: 20px;
     align-items: center;
+    font-size: 17px;
+
 }
 
 #sec-6 .contact p::before {
@@ -1021,6 +1025,15 @@ h1 span {
 }
 
 @media (max-width: 806px) {
+    #sec-0 article {
+        padding: 4rem 10px;
+    }
+
+    #sec-0 article a {
+        font-size: 1.2rem;
+        padding: 8px 28px;
+    }
+
     .img-fluid {
         max-width: 100%;
         height: auto;
@@ -1118,7 +1131,7 @@ h1 span {
 
     #sec-6 .about>p,
     #sec-6 .contact p {
-        font-size: 13px;
+        font-size: 18px;
         color: rgb(211, 211, 211);
     }
 
@@ -1130,8 +1143,21 @@ h1 span {
         font-size: 1.5rem;
     }
 
+    .loan-details {
+        width: 100% !important;
+        align-items: center;
+    }
+
+    .chart-details {
+        text-align: center;
+    }
+
     #realestate {
         display: none;
+    }
+
+    .text-heading h1 span {
+        line-height: 2em;
     }
 
     .btn-coustom-hover {
@@ -1145,11 +1171,13 @@ h1 span {
     }
 
     .card-title {
-        font-size: 18px;
+        font-size: 22px;
+        font-weight: 700;
+        padding-left: 3px;
     }
 
     #sec-0 article h2 {
-        font-size: 32px;
+        font-size: 38px;
     }
 
     #sec-1 a {
@@ -1202,7 +1230,7 @@ h1 span {
     .view,
     .breakup,
     .links {
-        width: 100% !important;
+        width: 93% !important;
     }
 
     .margin-right-btn {
@@ -1318,6 +1346,7 @@ h1 span {
 
     #sec-0 article h2 {
         font-size: 3.5rem;
+        width: 70%;
     }
 
     #sec-0 #searchBox {
@@ -1452,9 +1481,9 @@ h1 span {
 
     #sec-0 header nav a {
         margin-right: 10px;
-        font-size: 0.92rem;
+        font-size: 1rem;
         border-radius: 10px;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     #sec-1 article h1 {

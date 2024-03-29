@@ -114,6 +114,11 @@
     margin-top: 20px;
 }
 
+#sec-0 article h2 {
+    width: 100% !important;
+}
+
+
 @media (min-width: 576px) {
 
     .location-filter,

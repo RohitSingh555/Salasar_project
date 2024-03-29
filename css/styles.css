@@ -1021,6 +1021,17 @@ h1 span {
 }
 
 @media (max-width: 806px) {
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        width: 100% !important;
+    }
+
+    .modal-content {
+        width: 90% !important;
+        height: 90%;
+    }
+
     .sub-container {
         flex-direction: column;
         align-items: center;

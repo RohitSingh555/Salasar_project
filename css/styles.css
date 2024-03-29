@@ -79,14 +79,6 @@ body {
     font-style: italic;
 }
 
-/* Add more @font-face rules for other font weights and styles as needed */
-
-
-html {
-    font-size: 12px;
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
-}
 
 :root {
     --txtaccent: #fff;
@@ -337,6 +329,7 @@ html {
     color: var(--txtaccent);
     margin-bottom: 3rem;
     width: 50%;
+    font-size: 1.3rem;
     /* padding-left: 4rem;
     padding-right: 4rem; */
 }
@@ -382,7 +375,7 @@ html {
 }
 
 #sec-1 article p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: justify;
     color: #666666;
     margin: 1.3rem 0px 1.1rem;
@@ -571,6 +564,7 @@ h1 span {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
+    font-size: 1.1rem;
 }
 
 #sec-3 .card>div {
@@ -1122,9 +1116,14 @@ h1 span {
         display: none;
     }
 
+    .btn-coustom-hover {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
     #sec-1 article p,
     .card-text {
-        font-size: 16px;
+        font-size: 1.3rem !important;
     }
 
     .card-title {
@@ -1204,7 +1203,7 @@ h1 span {
 
     #header-section p {
         width: 100% !important;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -1222,7 +1221,7 @@ h1 span {
     }
 
     #sec-0 input+nav {
-        background-color: var(--bgaccent_withOpacity);
+        /* background-color: var(--bgaccent_withOpacity); */
         position: absolute;
         top: 100%;
         right: 0%;
@@ -1311,6 +1310,7 @@ h1 span {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
 
     #sec-1 article {

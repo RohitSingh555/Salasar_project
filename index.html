@@ -23,7 +23,7 @@
                 <p>Mon-Sat 9:00-19:00</p>
                 <div class="social">
                     <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-behance"></i></a>
                     <a href="#"><i class="fa-solid fa-basketball"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -52,7 +52,7 @@
                     <a href="/contact.html">Contact</a>
                     <div class="social" style="display:flex; vertical-align:top;">
                         <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </nav>
             </div>
@@ -66,8 +66,8 @@
                 <p>Building Legacies One Name at a Time. Constructing identities that endure.
                     From projects to
                     properties, our expert team erects names with strength and distinction. Lay the foundation for
-                    success with Salasar Name Builder.</p>
-                <a href="#" class="know-more-btn">
+                    success with Salasar Builders.</p>
+                <a href="/about.html" class="know-more-btn">
                     Know More &nbsp;
                     <i class="fa fa-arrow-right arrow-icon"></i> <!-- Bootstrap icon -->
                 </a>
@@ -94,7 +94,7 @@
             <aside><img src="Images/img1.png" alt="man"></aside>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <a href="#" class="know-more-btn">
+                    <a href="/about.html" class="know-more-btn">
                         Show More &nbsp;
                         <i class="fa fa-arrow-right arrow-icon"></i> <!-- Bootstrap icon -->
                     </a>
@@ -164,7 +164,7 @@
                             like a rooftop pool and fitness center elevate the living experience, making Esquire the
                             epitome of luxury living in the city.
                         </p>
-                        <a href="#" class="show-more-btn">
+                        <a href="/properties/exotica.html" class="show-more-btn">
                             Show More &nbsp;
                             <i class="fa fa-arrow-right arrow-icon"></i> <!-- Bootstrap icon -->
                         </a>
@@ -210,7 +210,7 @@
     <div class="container">
         <div class="row justify-content-center ">
             <div class="col-6 text-center">
-                <a href="#" class="btn btn-outline-primary btn rounded-5 btn-coustom-hover"
+                <a href="/properties.html" class="btn btn-outline-primary btn rounded-5 btn-coustom-hover"
                     style="color: rgb(206, 147, 0); border-color: rgb(206, 147, 0);">View All Properties &nbsp;<i
                         class="fa fa-arrow-right arrow-icon"></i></a>
             </div>
@@ -361,7 +361,7 @@
         <div class="container p-5">
             <div class="row text-center p-5">
                 <div class="col-md-4">
-                    <h2 class="display-3 counter" data-count="39">0</h2>
+                    <h2 class="display-3 counter" data-count="42">0</h2>
                     <p class="lead">Building Real Estate projects since</p>
                 </div>
                 <div class="col-md-4">
@@ -381,15 +381,16 @@
             <div class="container">
                 <aside>
                     <h1>How can we assist you with your project?</h1>
-                    <br>
-                    <h2>feel free to contact us!</h2>
+
                 </aside>
-                <form id="form" data-netlify="true" action="/thankyou.html" method="POST" netlify>
+                <form id="form" data-netlify="true" action="/thankyou.html" data-netlify-recaptcha="true" method="POST"
+                    netlify>
                     <input type="text" name="name" id="" placeholder="Name" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                     <input type="phone" name="phone" id="phone" placeholder="Phone" required>
                     <textarea class="form-control" name="message" id="message" placeholder="Message" required
                         style="width: 100%; margin-right: 15px;resize:none; height: 150px; border:none; font-size:17px;"></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <input type="submit" value="submit" id="submit">
                 </form>
                 <p id="msg"></p>

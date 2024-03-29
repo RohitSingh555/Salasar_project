@@ -37,7 +37,7 @@
                     <a href="#">Contact</a>
                     <div class="social" style="display:flex; vertical-align:top;">
                         <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </nav>
             </div>
@@ -105,7 +105,8 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
 
-                <form id="form" data-netlify="true" action="/thankyou.html" method="POST" netlify>
+                <form id="form" data-netlify="true" action="/thankyou.html" data-netlify-recaptcha="true" method="POST"
+                    netlify>
                     <h3 class="title">Contact Form</h3>
                     <div class="input-container">
                         <input type="text" name="name" class="input" />
@@ -127,6 +128,7 @@
                         <label for="">Message</label>
                         <span>Message</span>
                     </div>
+                    <div class="pb-5" data-netlify-recaptcha="true"></div>
                     <input type="submit" value="Send" class="btn" />
                 </form>
             </div>

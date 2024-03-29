@@ -64,10 +64,10 @@
             </div>
             <div class="delivered-meals">
                 <div class="delivered-imgs">
-                    <img src="../Images/mumbai.webp" alt="Customer photo" />
-                    <img src="../Images/pune.jpg" alt="Customer photo" />
-                    <img src="../Images/nagpur.jpg" alt="Customer photo" />
-                    <img src="../Images/thane.jpg" alt="Customer photo" />
+                    <img src="../Images/mumbai.webp" alt="Customer photo" class="modal-target" />
+                    <img src="../Images/pune.jpg" alt="Customer photo" class="modal-target" />
+                    <img src="../Images/nagpur.jpg" alt="Customer photo" class="modal-target" />
+                    <img src="../Images/thane.jpg" alt="Customer photo" class="modal-target" />
                 </div>
                 <p class="delivered-text pt-4">
                     <span>In cities across Maharashtra,</span> We're making Legacies.
@@ -105,7 +105,8 @@
                             beyond horizons and spread its wing with ambition.</p>
                     </span>
                     <figure class="overview-picture mx-auto mt-5 text-center">
-                        <img style="width: 50%;" src="/Images/Esquire.jpg" alt="alt" class="hero-img img-fluid" />
+                        <img style="width: 50%;" src="/Images/Esquire.jpg" alt="alt"
+                            class="hero-img img-fluid modal-target" />
                     </figure>
                 </div>
             </div>
@@ -141,10 +142,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-lg-6 mb-4">
-                                <img src="/Images/esquire-a10.webp" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a10.webp" alt="alt" class="img-fluid modal-target">
                             </div>
                             <div class="col-md-6 col-lg-6 mb-4">
-                                <img src="/Images/esquire-a11.webp" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a11.webp" alt="alt" class="img-fluid modal-target">
                             </div>
                         </div>
                     </div>
@@ -168,28 +169,28 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-lg-3 mb-4">
-                                <img src="/Images/esquire-a1.jpg" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a1.jpg" alt="alt" class="img-fluid modal-target">
                             </div>
                             <div class="col-md-6 col-lg-3 mb-4">
-                                <img src="/Images/esquire-a2.jpg" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a2.jpg" alt="alt" class="img-fluid modal-target">
                             </div>
                             <div class="col-md-6 col-lg-3 mb-4">
-                                <img src="/Images/esquire-a3.jpg" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a3.jpg" alt="alt" class="img-fluid modal-target">
                             </div>
                             <div class="col-md-6 col-lg-3 mb-4">
-                                <img src="/Images/esquire-a4.jpg" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a4.jpg" alt="alt" class="img-fluid modal-target">
                             </div>
                             <div class="col-md-6 col-lg-3 mb-4">
-                                <img src="/Images/esquire-a5.jpg" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a5.jpg" alt="alt" class="img-fluid modal-target">
                             </div>
                             <div class="col-md-6 col-lg-3 mb-4">
-                                <img src="/Images/esquire-a6.jpg" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a6.jpg" alt="alt" class="img-fluid modal-target">
                             </div>
                             <div class="col-md-6 col-lg-3 mb-4">
-                                <img src="/Images/esquire-a7.jpg" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a7.jpg" alt="alt" class="img-fluid modal-target">
                             </div>
                             <div class="col-md-6 col-lg-3 mb-4">
-                                <img src="/Images/esquire-a8.jpg" alt="alt" class="img-fluid">
+                                <img src="/Images/esquire-a8.jpg" alt="alt" class="img-fluid modal-target">
                             </div>
                         </div>
                     </div>
@@ -299,8 +300,11 @@
                         <div class="line after"></div>
                     </div>
                     <figure class="overview-picture mx-auto mt-5 text-center">
+                        <p class="text-muted mb-3"><i class="fas fa-info-circle me-2"></i>You can download the catalog
+                            of this property:</p>
                         <a href="https://drive.google.com/uc?export=download&id=1rdZxxIxbV4sn-M6wtSqEEu2Tb4ohEEao"
-                            download class="download-btn">Download <i class="fas fa-file-download"></i></a>
+                            download class="btn btn-lg btn-primary download-btn">Download <i
+                                class="fas fa-file-download"></i></a>
                     </figure>
                 </div>
             </div>
@@ -341,10 +345,7 @@
                     properties, our expert team erects names with strength and distinction. Lay the foundation for
                     success with Salasar Name Builder.</p>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></i></a>
             </div>
             <div class="links">
                 <h1>Quick Links</h1>
@@ -374,7 +375,31 @@
     <footer>
         <p>Copyright &copy; 2024 &nbsp;<img src="/Images/Salasar Logo.png" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+    <script>
+        var modal = document.getElementById('modal');
 
+        var modalClose = document.getElementById('modal-close');
+        modalClose.addEventListener('click', function () {
+            modal.style.display = "none";
+        });
+
+        // global handler
+        document.addEventListener('click', function (e) {
+            if (e.target.className.indexOf('modal-target') !== -1) {
+                var img = e.target;
+                var modalImg = document.getElementById("modal-content");
+                var captionText = document.getElementById("modal-caption");
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                captionText.innerHTML = img.alt;
+            }
+        });
+    </script>
 </body>
 
 </html>

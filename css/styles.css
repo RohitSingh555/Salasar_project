@@ -983,9 +983,7 @@ h1 span {
 }
 
 .show-more-btn:hover {
-    /* text-decoration: underline; */
     color: #19a3ff;
-    /* Change color on hover */
 }
 
 .card-title {
@@ -1015,12 +1013,21 @@ h1 span {
     transform: translateY(0)
 }
 
-/*MEDIA QUERRIES*/
 /*Smart phones */
+@media (max-width: 406px) {
+    .contact-form {
+        width: 94%;
+    }
+}
+
 @media (max-width: 806px) {
     .sub-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    #sec-6 {
+        padding-bottom: 1rem;
     }
 
     .btn-custom-ty {
@@ -1585,19 +1592,16 @@ h1 span {
 .carousel-control-next {
     background-color: rgba(255, 255, 255, 0);
     opacity: 0.7;
-    /* Set initial opacity */
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     opacity: 1;
-    /* Change opacity on hover */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(1);
-    /* Invert the color of the icon */
 }
 
 .card-img-top {
@@ -1645,6 +1649,12 @@ h1 span {
     cursor: pointer;
 }
 
+.chart-details {
+    color: #609fff;
+    border: 2px solid #609fff;
+    border-radius: 10px;
+}
+
 .view,
 .breakup {
     width: 50%;
@@ -1657,6 +1667,7 @@ h1 span {
 .detail {
     display: flex;
     justify-content: space-between;
+    margin-top: 36px;
 }
 
 .footer {
@@ -1843,4 +1854,96 @@ footer p {
 
 footer img {
     width: 50px;
+}
+
+
+.modal-target {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-target:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 90%;
+    opacity: 1 !important;
+    max-width: 90%;
+}
+
+.modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 32px;
+}
+
+.modal-content,
+.modal-caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-atransform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }

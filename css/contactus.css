@@ -180,6 +180,7 @@ textarea.input {
 
 .contact-info .title {
     color: #1abc9c;
+    font-size: 32px;
 }
 
 .text {
@@ -193,6 +194,14 @@ textarea.input {
     margin: 0.7rem 0;
     align-items: baseline;
     font-size: 0.95rem;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+.input-container {
+    margin-bottom: 2rem;
 }
 
 .information i {

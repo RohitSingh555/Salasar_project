@@ -120,7 +120,7 @@
                 <div class="conti">
                     <div class="card shadow" data-location="thane" data-status="on-going"
                         onclick="window.location.href='/properties/exotica.html'">
-                        <img class="card-img-top" src="/Images/exotica.png" alt="Salasar Exotica">
+                        <img class="card-img-top modal-target" src="/Images/exotica.png" alt="Salasar Exotica">
                         <div class="card-body">
                             <h5 class="card-title">Salasar Exotica</h5>
                             <div class="d-flex justify-content-between">
@@ -134,7 +134,7 @@
                     </div>
                     <div class="card shadow" data-location="pune" data-status="completed"
                         onclick="window.location.href='/properties/jasmine.html'">
-                        <img class="card-img-top" src="/Images/jasmine_res.png" alt="Jasmine Residency">
+                        <img class="card-img-top modal-target" src="/Images/jasmine_res.png" alt="Jasmine Residency">
                         <div class="card-body">
                             <h5 class="card-title">Jasmine Residency</h5>
                             <div class="d-flex justify-content-between">
@@ -148,7 +148,7 @@
                     </div>
                     <div class="card shadow" data-location="mumbai" data-status="on-hold"
                         onclick="window.location.href='/properties/courtyard.html'">
-                        <img class="card-img-top" src="/Images/courtyard.png" alt="Salasar Courtyard">
+                        <img class="card-img-top modal-target" src="/Images/courtyard.png" alt="Salasar Courtyard">
                         <div class="card-body">
                             <h5 class="card-title">Salasar Courtyard</h5>
                             <div class="d-flex justify-content-between">
@@ -162,7 +162,7 @@
                     </div>
                     <div class="card shadow" data-location="thane" data-status="completed"
                         onclick="window.location.href='/properties/kasturi.html'">
-                        <img class="card-img-top" src="/Images/kasturi.png" alt="Salasar Kasturi">
+                        <img class="card-img-top modal-target" src="/Images/kasturi.png" alt="Salasar Kasturi">
                         <div class="card-body">
                             <h5 class="card-title">Salasar Kasturi</h5>
                             <div class="d-flex justify-content-between">
@@ -176,7 +176,7 @@
                     </div>
                     <div class="card shadow" data-location="mumbai" data-status="on-hold"
                         onclick="window.location.href='/properties/esquire.html'">
-                        <img class="card-img-top" src="/Images/Esquire.jpg" alt="Salasar Esquire">
+                        <img class="card-img-top modal-target" src="/Images/Esquire.jpg" alt="Salasar Esquire">
                         <div class="card-body">
                             <h5 class="card-title">Salasar Esquire</h5>
                             <div class="d-flex justify-content-between">
@@ -204,10 +204,7 @@
                     properties, our expert team erects names with strength and distinction. Lay the foundation for
                     success with Salasar Name Builder.</p>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></i></a>
             </div>
             <div class="links">
                 <h1>Quick Links</h1>
@@ -237,7 +234,11 @@
     <footer>
         <p>Copyright &copy; 2024 &nbsp;<img src="/Images/Salasar Logo.png" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
-
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -290,7 +291,26 @@
         applyFilters();
 
     </script>
+    <script>
+        var modal = document.getElementById('modal');
 
+        var modalClose = document.getElementById('modal-close');
+        modalClose.addEventListener('click', function () {
+            modal.style.display = "none";
+        });
+
+        // global handler
+        document.addEventListener('click', function (e) {
+            if (e.target.className.indexOf('modal-target') !== -1) {
+                var img = e.target;
+                var modalImg = document.getElementById("modal-content");
+                var captionText = document.getElementById("modal-caption");
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                captionText.innerHTML = img.alt;
+            }
+        });
+    </script>
 
 </body>
 

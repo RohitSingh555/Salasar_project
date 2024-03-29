@@ -71,7 +71,7 @@
                             <li>Creating Joy for 8000+ Families.</li>
                         </ul>
                         <div class="btn-box">
-                            <a href="#" class="theme-btn btn-style-one">Contact Us</a>
+                            <a href="/contact.html" class="theme-btn btn-style-one">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -80,9 +80,9 @@
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column wow fadeInLeft">
                         <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img
-                                    src="/Images/exotica-bg.png" alt=""></a></figure>
+                                    class="modal-target" src="/Images/exotica-bg.png" alt=""></a></figure>
                         <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img
-                                    src="/Images/Salasar Logo.png" alt=""></a></figure>
+                                    class="modal-target" src="/Images/Salasar Logo.png" alt=""></a></figure>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <img src="/Images/kasturi-bg.png">
+                <img class="modal-target" src="/Images/kasturi-bg.png">
             </div>
         </div>
     </section>
@@ -198,10 +198,6 @@
         </div>
     </div>
 
-
-
-
-
     <section id="sec-6">
         <div class="container px-3">
             <div class="about">
@@ -214,10 +210,7 @@
                     properties, our expert team erects names with strength and distinction. Lay the foundation for
                     success with Salasar Name Builder.</p>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></i></a>
             </div>
             <div class="links">
                 <h1>Quick Links</h1>
@@ -247,6 +240,31 @@
     <footer>
         <p>Copyright &copy; 2024 &nbsp;<img src="/Images/Salasar Logo.png" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+    <script>
+        var modal = document.getElementById('modal');
+
+        var modalClose = document.getElementById('modal-close');
+        modalClose.addEventListener('click', function () {
+            modal.style.display = "none";
+        });
+
+        // global handler
+        document.addEventListener('click', function (e) {
+            if (e.target.className.indexOf('modal-target') !== -1) {
+                var img = e.target;
+                var modalImg = document.getElementById("modal-content");
+                var captionText = document.getElementById("modal-caption");
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                captionText.innerHTML = img.alt;
+            }
+        });
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             function startCounters() {

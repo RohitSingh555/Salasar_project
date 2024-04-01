@@ -25,7 +25,7 @@
             <div class="container">
                 <h1>
                     <img loading="lazy" onclick="window.location.href='/index.html'" style="width: 150px;"
-                        src="/Images/Salasar Logo.png">
+                        src="/Images/Salasar Logo.webp">
                 </h1>
                 <label for="menu"><i class="fas fa-bars"></i></label>
                 <input type="checkbox" id="menu">
@@ -71,7 +71,7 @@
                     and beyond. Our organization continues to thrive, growing in both size and diversity, while
                     maintaining a steadfast commitment to excellence.</p>
             </article>
-            <aside><img loading="lazy" src="Images/img1.png" alt="man"></aside>
+            <aside><img loading="lazy" src="Images/img1.webp" alt="man"></aside>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <a href="/about.html" class="know-more-btn">
@@ -94,7 +94,7 @@
         <div class="container">
             <div class="cont">
                 <div class="card ">
-                    <img loading="lazy" class="card-img-top modal-target" src="/Images/exotica.png">
+                    <img loading="lazy" class="card-img-top modal-target" src="/Images/exotica.webp">
                     <div class="card-body px-0 pt-4">
                         <h5 class="card-title">Salasar Exotica</h5>
                         <p class="card-text">
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="card ">
-                    <img loading="lazy" class="card-img-top modal-target" src="/Images/jasmine_res.png">
+                    <img loading="lazy" class="card-img-top modal-target" src="/Images/jasmine_res.webp">
                     <div class="card-body px-0 pt-4">
                         <h5 class="card-title">Jasmine Residency</h5>
                         <p class="card-text">
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img loading="lazy" class="card-img-top modal-target" src="/Images/courtyard.png">
+                    <img loading="lazy" class="card-img-top modal-target" src="/Images/courtyard.webp">
                     <div class="card-body px-0 pt-4">
                         <h5 class="card-title">Salasar Courtyard</h5>
                         <p class="card-text">
@@ -285,16 +285,16 @@
         <div class="container">
 
             <div class="cont">
-                <img loading="lazy" class="wow animated fadeIn slow modal-target" src="Images/exotica-full.jpg"
+                <img loading="lazy" class="wow animated fadeIn slow modal-target" src="Images/exotica-full.webp"
                     alt="pic">
                 <aside>
-                    <img loading="lazy" src="Images/jasmine_res.png" alt="pic"
+                    <img loading="lazy" src="Images/jasmine_res.webp" alt="pic"
                         class="wow animated flipInX delay-1s modal-target">
-                    <img loading="lazy" src="Images/kasturi.png" alt="pic"
+                    <img loading="lazy" src="Images/kasturi.webp" alt="pic"
                         class="wow animated flipInX delay-1s slower modal-target">
-                    <img loading="lazy" src="/Images/courtyard.png" alt="pic"
+                    <img loading="lazy" src="/Images/courtyard.webp" alt="pic"
                         class="wow animated flipInX delay-1s modal-target">
-                    <img loading="lazy" src="/Images/Esquire.jpg" alt="pic"
+                    <img loading="lazy" src="/Images/Esquire.webp" alt="pic"
                         class="wow animated flipInX delay-1s slower modal-target">
                 </aside>
             </div>
@@ -379,7 +379,7 @@
         </div>
     </section>
     <footer>
-        <p>Copyright &copy; 2024 &nbsp;<img loading="lazy" src="/Images/Salasar Logo.png" alt="logo"> &nbsp; All Rights
+        <p>Copyright &copy; 2024 &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights
             Reserved.</p>
     </footer>
     <button class="scrollToTopBtn">
@@ -391,15 +391,22 @@
         <div id="modal-caption" class="modal-caption"></div>
     </div>
     <script>
-        var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
-        var rootElement = document.documentElement
+        var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+        var rootElement = document.documentElement;
+        var isScrolling = false;
 
         function handleScroll() {
-            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-            if ((rootElement.scrollTop / scrollTotal) > 0.15) {
-                scrollToTopBtn.classList.add("showBtn")
-            } else {
-                scrollToTopBtn.classList.remove("showBtn")
+            if (!isScrolling) {
+                isScrolling = true;
+                requestAnimationFrame(function () {
+                    var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+                    if ((rootElement.scrollTop / scrollTotal) > 0.15) {
+                        scrollToTopBtn.classList.add("showBtn");
+                    } else {
+                        scrollToTopBtn.classList.remove("showBtn");
+                    }
+                    isScrolling = false;
+                });
             }
         }
 
@@ -407,13 +414,15 @@
             rootElement.scrollTo({
                 top: 0,
                 behavior: "smooth"
-            })
+            });
         }
-        scrollToTopBtn.addEventListener("click", scrollToTop)
-        document.addEventListener("scroll", handleScroll)
+
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+        document.addEventListener("scroll", handleScroll);
+
 
         document.addEventListener("DOMContentLoaded", function () {
-            function startCounters() {
+            const startCounters = () => {
                 const counters = document.querySelectorAll('.counter');
                 const speed = 100;
 
@@ -423,11 +432,9 @@
 
                     if (index === 0) {
                         suffix = '+ Yrs';
-
                     } else if (index === Math.floor(counters.length / 2)) {
                         suffix = 'M+';
-                    }
-                    else {
+                    } else {
                         suffix = '+';
                     }
 
@@ -435,19 +442,26 @@
                         const count = +counter.innerText;
                         const inc = target / speed;
 
-                        if (count < target) { counter.innerText = Math.ceil(count + inc); setTimeout(updateCount, 1); } else {
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            requestAnimationFrame(updateCount);
+                        } else {
                             counter.innerText = target + suffix;
                         }
-                    }; updateCount();
+                    };
+
+                    updateCount();
                 });
-            } function handleIntersect(entries) {
+            };
+
+            const handleIntersect = (entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         startCounters();
                         observer.unobserve(entry.target);
                     }
                 });
-            }
+            };
 
             const observer = new IntersectionObserver(handleIntersect, {
                 root: null,
@@ -457,6 +471,7 @@
 
             observer.observe(document.getElementById('statsSection'));
         });
+
 
 
         var modal = document.getElementById('modal');
@@ -483,27 +498,31 @@
         var loan_amt_slider = document.getElementById("loan-amount");
         var int_rate_slider = document.getElementById("interest-rate");
         var loan_period_slider = document.getElementById("loan-period");
+        var loan_amt_text = document.querySelector("#loan-amt-text");
+        var int_rate_text = document.querySelector("#interest-rate-text");
+        var loan_period_text = document.querySelector("#loan-period-text");
+        var cp = document.querySelector("#cp");
+        var ci = document.querySelector("#ci");
+        var ct = document.querySelector("#ct");
+        var price = document.querySelector("#price");
 
         // update loan amount
-        loan_amt_slider.addEventListener("input", (self) => {
-            document.querySelector("#loan-amt-text").innerText =
-                parseInt(self.target.value).toLocaleString("en-IN") + "₹";
+        loan_amt_slider.addEventListener("input", function (self) {
+            loan_amt_text.innerText = parseInt(self.target.value).toLocaleString("en-IN") + "₹";
             P = parseFloat(self.target.value);
             displayDetails();
         });
 
         // update Rate of Interest
-        int_rate_slider.addEventListener("input", (self) => {
-            document.querySelector("#interest-rate-text").innerText =
-                self.target.value + "%";
+        int_rate_slider.addEventListener("input", function (self) {
+            int_rate_text.innerText = self.target.value + "%";
             R = parseFloat(self.target.value);
             displayDetails();
         });
 
         // update loan period
-        loan_period_slider.addEventListener("input", (self) => {
-            document.querySelector("#loan-period-text").innerText =
-                self.target.value + " years";
+        loan_period_slider.addEventListener("input", function (self) {
+            loan_period_text.innerText = self.target.value + " years";
             N = parseFloat(self.target.value);
             displayDetails();
         });
@@ -515,13 +534,15 @@
             let yearPrincipal = [];
             let years = [];
             let year = 1;
-            let [counter, principal, interes] = [0, 0, 0];
+            let counter = 0, principal = 0, interes = 0;
+
             while (p > 0) {
-                let interest = parseFloat(p) * parseFloat(r);
-                p = parseFloat(p) - (parseFloat(emi) - interest);
+                let interest = p * r;
+                p = p - (emi - interest);
                 totalInterest += interest;
-                principal += parseFloat(emi) - interest;
+                principal += emi - interest;
                 interes += interest;
+
                 if (++counter == 12) {
                     years.push(year++);
                     yearlyInterest.push(parseInt(interes));
@@ -529,6 +550,7 @@
                     counter = 0;
                 }
             }
+
             line.data.datasets[0].data = yearPrincipal;
             line.data.datasets[1].data = yearlyInterest;
             line.data.labels = years;
@@ -537,51 +559,32 @@
 
         // calculate details
         function displayDetails() {
-            let r = parseFloat(R) / 1200;
-            let n = parseFloat(N) * 12;
-
-            let num = parseFloat(P) * r * Math.pow(1 + r, n);
+            let r = R / 1200;
+            let n = N * 12;
+            let num = P * r * Math.pow(1 + r, n);
             let denom = Math.pow(1 + r, n) - 1;
-            let emi = parseFloat(num) / parseFloat(denom);
-
-            let payabaleInterest = calculateLoanDetails(P, r, emi);
-
+            let emi = num / denom;
             let opts = '{style: "decimal", currency: "US"}';
 
-            document.querySelector("#cp").innerText =
-                parseFloat(P).toLocaleString("en-IN", opts) + "₹";
-
-            document.querySelector("#ci").innerText =
-                parseFloat(payabaleInterest).toLocaleString("en-IN", opts) + "₹";
-
-            document.querySelector("#ct").innerText =
-                parseFloat(parseFloat(P) + parseFloat(payabaleInterest)).toLocaleString(
-                    "en-IN",
-                    opts
-                ) + "₹";
-
-            document.querySelector("#price").innerText =
-                parseFloat(emi).toLocaleString("en-IN", opts) + "₹";
+            cp.innerText = P.toLocaleString("en-IN", opts) + "₹";
+            ci.innerText = calculateLoanDetails(P, r, emi).toLocaleString("en-IN", opts) + "₹";
+            ct.innerText = (P + calculateLoanDetails(P, r, emi)).toLocaleString("en-IN", opts) + "₹";
+            price.innerText = emi.toLocaleString("en-IN", opts) + "₹";
 
             pie.data.datasets[0].data[0] = P;
-            pie.data.datasets[0].data[1] = payabaleInterest;
+            pie.data.datasets[0].data[1] = calculateLoanDetails(P, r, emi);
             pie.update();
             line.update();
         }
 
         // Initialize everything
         function initialize() {
-            document.querySelector("#loan-amt-text").innerText =
-                parseInt(loan_amt_slider.value).toLocaleString("en-IN") + " ₹";
-            P = parseFloat(document.getElementById("loan-amount").value);
-
-            document.querySelector("#interest-rate-text").innerText =
-                int_rate_slider.value + "%";
-            R = parseFloat(document.getElementById("interest-rate").value);
-
-            document.querySelector("#loan-period-text").innerText =
-                loan_period_slider.value + " years";
-            N = parseFloat(document.getElementById("loan-period").value);
+            loan_amt_text.innerText = parseInt(loan_amt_slider.value).toLocaleString("en-IN") + " ₹";
+            P = parseFloat(loan_amt_slider.value);
+            int_rate_text.innerText = int_rate_slider.value + "%";
+            R = parseFloat(int_rate_slider.value);
+            loan_period_text.innerText = loan_period_slider.value + " years";
+            N = parseFloat(loan_period_slider.value);
 
             line = new Chart(document.getElementById("lineChart"), {
                 data: {
@@ -649,15 +652,18 @@
                     }
                 }
             });
+
             displayDetails();
         }
+
         initialize();
+
 
 
     </script>
     <script src="js/wow.min.js"></script>
     <script> new WOW().init();</script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>

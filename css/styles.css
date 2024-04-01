@@ -106,7 +106,7 @@ body {
 
 /* SECTION ZERO = LANDING VIEW */
 #sec-0 {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/banner.jpg) no-repeat top center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/banner.webp) no-repeat top center/cover;
 }
 
 #sec-0 header.top {
@@ -411,7 +411,7 @@ body {
 }
 
 #sec-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/bg4.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/bg4.webp) no-repeat center center/cover;
     text-align: center;
     padding: 3rem 0px 1.8rem;
 }
@@ -662,7 +662,7 @@ h1 span {
 
 /* SECTION 5 */
 #sec-5 {
-    background: url(../Images/bg3.jpg) no-repeat center center/cover;
+    background: url(../Images/bg3.webp) no-repeat center center/cover;
     text-align: center;
     padding-top: 2rem;
     font-size: 0.9rem;
@@ -1870,7 +1870,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 #statsSection {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../Images/rascacielos-nueva-york.jpg) no-repeat center center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../Images/rascacielos-nueva-york.webp) no-repeat center center / cover;
 }
 
 .lead {

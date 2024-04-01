@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script defer src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
     <title>SALASAR</title>
 </head>
 
@@ -206,15 +206,14 @@
             <span class="visually-hidden">Next</span>
         </button> -->
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="text-heading p-3">
             <h1>EMI Calculator
                 <span>Empower Your Financial Decisions: Calculate Your EMI!</span>
             </h1>
         </div>
-    </div>
-    <div class="container px-5 pb-5">
-        <!-- <h1 class="text-heading" style="color: #181818">EMI Calculator</h1> -->
+    </div> -->
+    <!-- <div class="container px-5 pb-5">
         <div class="sub-container">
             <div class="view">
                 <div class="details">
@@ -271,9 +270,9 @@
             </div>
 
 
-            <!-- <canvas id="lineChart" height="200px" width="200px"></canvas> -->
-        </div>
-    </div>
+           <canvas id="lineChart" height="200px" width="200px"></canvas> -->
+    <!-- </div>
+    </div> -->
     <div class="container">
         <div class="text-heading p-3">
             <h1>Our Projects
@@ -493,170 +492,6 @@
             }
         });
 
-
-        var P, R, N, pie, line;
-        var loan_amt_slider = document.getElementById("loan-amount");
-        var int_rate_slider = document.getElementById("interest-rate");
-        var loan_period_slider = document.getElementById("loan-period");
-        var loan_amt_text = document.querySelector("#loan-amt-text");
-        var int_rate_text = document.querySelector("#interest-rate-text");
-        var loan_period_text = document.querySelector("#loan-period-text");
-        var cp = document.querySelector("#cp");
-        var ci = document.querySelector("#ci");
-        var ct = document.querySelector("#ct");
-        var price = document.querySelector("#price");
-
-        // update loan amount
-        loan_amt_slider.addEventListener("input", function (self) {
-            loan_amt_text.innerText = parseInt(self.target.value).toLocaleString("en-IN") + "₹";
-            P = parseFloat(self.target.value);
-            displayDetails();
-        });
-
-        // update Rate of Interest
-        int_rate_slider.addEventListener("input", function (self) {
-            int_rate_text.innerText = self.target.value + "%";
-            R = parseFloat(self.target.value);
-            displayDetails();
-        });
-
-        // update loan period
-        loan_period_slider.addEventListener("input", function (self) {
-            loan_period_text.innerText = self.target.value + " years";
-            N = parseFloat(self.target.value);
-            displayDetails();
-        });
-
-        // calculate total Interest payable
-        function calculateLoanDetails(p, r, emi) {
-            let totalInterest = 0;
-            let yearlyInterest = [];
-            let yearPrincipal = [];
-            let years = [];
-            let year = 1;
-            let counter = 0, principal = 0, interes = 0;
-
-            while (p > 0) {
-                let interest = p * r;
-                p = p - (emi - interest);
-                totalInterest += interest;
-                principal += emi - interest;
-                interes += interest;
-
-                if (++counter == 12) {
-                    years.push(year++);
-                    yearlyInterest.push(parseInt(interes));
-                    yearPrincipal.push(parseInt(principal));
-                    counter = 0;
-                }
-            }
-
-            line.data.datasets[0].data = yearPrincipal;
-            line.data.datasets[1].data = yearlyInterest;
-            line.data.labels = years;
-            return totalInterest;
-        }
-
-        // calculate details
-        function displayDetails() {
-            let r = R / 1200;
-            let n = N * 12;
-            let num = P * r * Math.pow(1 + r, n);
-            let denom = Math.pow(1 + r, n) - 1;
-            let emi = num / denom;
-            let opts = '{style: "decimal", currency: "US"}';
-
-            cp.innerText = P.toLocaleString("en-IN", opts) + "₹";
-            ci.innerText = calculateLoanDetails(P, r, emi).toLocaleString("en-IN", opts) + "₹";
-            ct.innerText = (P + calculateLoanDetails(P, r, emi)).toLocaleString("en-IN", opts) + "₹";
-            price.innerText = emi.toLocaleString("en-IN", opts) + "₹";
-
-            pie.data.datasets[0].data[0] = P;
-            pie.data.datasets[0].data[1] = calculateLoanDetails(P, r, emi);
-            pie.update();
-            line.update();
-        }
-
-        // Initialize everything
-        function initialize() {
-            loan_amt_text.innerText = parseInt(loan_amt_slider.value).toLocaleString("en-IN") + " ₹";
-            P = parseFloat(loan_amt_slider.value);
-            int_rate_text.innerText = int_rate_slider.value + "%";
-            R = parseFloat(int_rate_slider.value);
-            loan_period_text.innerText = loan_period_slider.value + " years";
-            N = parseFloat(loan_period_slider.value);
-
-            line = new Chart(document.getElementById("lineChart"), {
-                data: {
-                    datasets: [
-                        {
-                            type: "line",
-                            label: "Yearly Principal paid",
-                            borderColor: "rgb(54, 162, 235)",
-                            data: []
-                        },
-                        {
-                            type: "line",
-                            label: "Yearly Interest paid",
-                            borderColor: "rgb(255, 99, 132)",
-                            data: []
-                        }
-                    ],
-                    labels: []
-                },
-                options: {
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: "Yearly Payment Breakdown"
-                        }
-                    },
-                    scales: {
-                        x: {
-                            title: {
-                                color: "grey",
-                                display: true,
-                                text: "Years Passed"
-                            }
-                        },
-                        y: {
-                            title: {
-                                color: "grey",
-                                display: true,
-                                text: "Money in Rs."
-                            }
-                        }
-                    }
-                }
-            });
-
-            pie = new Chart(document.getElementById("pieChart"), {
-                type: "doughnut",
-                data: {
-                    labels: ["Principal", "Interest"],
-                    datasets: [
-                        {
-                            label: "Home Loan Details",
-                            data: [0, 0],
-                            backgroundColor: ["rgb(54, 162, 235)", "rgb(255, 99, 132)"],
-                            hoverOffset: 4
-                        }
-                    ]
-                },
-                options: {
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: "Payment Breakup"
-                        }
-                    }
-                }
-            });
-
-            displayDetails();
-        }
-
-        initialize();
 
 
 

@@ -994,6 +994,10 @@ h1 span {
     font-weight: 600;
 }
 
+.p-description {
+    font-weight: 500;
+}
+
 .scrollToTopBtn {
     background-color: #1f1f1f;
     border: none;

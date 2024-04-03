@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salasar Exotica</title>
+    <link rel="icon" type="image/x-icon" href="/Images/Salasar Icon.svg">
+    <link href="../css/property_detail.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.compat.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <script defer src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <section id="sec-0">
+
+        <header>
+            <div class="hide" id="searchBar">
+                <input type="search" name="searchBox" id="searchBox"
+                    placeholder="Type your search here..    Press [Esc] to exist">
+            </div>
+            <div class="container">
+                <h1>
+                    <img loading="lazy" onclick="window.location.href='/index.html'" style="width: 150px;"
+                        src="/Images/Salasar Logo.webp">
+                </h1>
+                <label for="menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="menu">
+                <nav>
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/properties.html">Properties</a>
+                    <!-- <a href="#">Things to Know</a> -->
+                    <a href="/contact.html">Contact</a>
+                    <div class="social" style="display:flex; vertical-align:top;">
+                        <a href="https://www.facebook.com/salasarassociates" title="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section class="section-hero">
+        <div class="hero container">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">
+                    SALASAR WOODS
+                </h1>
+                <p class="hero-description">
+
+                    Nestled in Salasar Woods are lush landscapes, reliable power, playful kids' corners, and
+                    eco-friendly measures. With easy access to Mira Road and Beyond, discover a vibrant community with
+                    top-notch schools and healthcare facilities nearby.
+                </p>
+                <a href="#contactus" class="btn btn--fill margin-right-btn">Contact Us
+                </a>
+                <a href="#overview" class="btn btn--outline margin-right-btn">Learn more &darr;
+                </a>
+            </div>
+            <div class="hero-img-box">
+                <img style="min-height: 600px;" loading="lazy" src="/Images/Woods-bg.png" alt="alt"
+                    class="hero-img modal-target" />
+            </div>
+            <div class="delivered-meals pt-4">
+                <div class="delivered-imgs">
+                    <img loading="lazy" src="../Images/mumbai.webp" alt="Customer photo" class="modal-target" />
+                    <img loading="lazy" src="../Images/pune.webp" alt="Customer photo" class="modal-target" />
+                    <img loading="lazy" src="../Images/nagpur.webp" alt="Customer photo" class="modal-target" />
+                    <img loading="lazy" src="../Images/thane.webp" alt="Customer photo" class="modal-target" />
+                </div>
+                <p class="delivered-text">
+                    <span>In regions across Maharashtra,</span> We're making Legacies.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="overview-section pt-5 bg-light" id="overview">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="container">
+                    <div class="h2-line text-center">
+                        <div class="line before"></div>
+                        <h2 class="custom text-center uppercase">Overview</h2>
+                        <div class="line after"></div>
+                    </div>
+                    <span class="lead mx-auto mt-4 text-center">
+                        <p class="text-black-50 p-description fw-semibold ">Salasar Woods offers an array of amenities,
+                            including a
+                            meticulously crafted landscaped garden, reliable power backup, a vibrant children's play
+                            area, state-of-the-art fire fighting systems, and efficient rainwater harvesting facilities,
+                            among others. Situated in the heart of the Mumbai Metropolitan Region, Salasar Woods enjoys
+                            proximity to key areas like Mira Road and Beyond. Residents benefit from convenient access
+                            to top-tier schools and hospitals, further enhancing the quality of life in this thriving
+                            community.</p>
+                    </span>
+                    <figure class="overview-picture mx-auto mt-5 text-center">
+                        <img loading="lazy" style="width: 50%;" src="/Images/Woods.jpg" alt="alt"
+                            class="hero-img img-fluid modal-target" />
+                    </figure>
+                </div>
+            </div>
+            <div class="row justify-content-center pb-5 pt-5">
+                <div class="container">
+                    <div class="h2-line text-center">
+                        <div class="line before"></div>
+                        <h2 class="custom text-center uppercase">NEIGHBOURHOOD</h2>
+                        <div class="line after"></div>
+                    </div>
+                    <span class="lead mx-auto mt-4 text-center">
+                        <p class="text-black-50 p-description">Plot No. Old 299, New 180 Hissa No. 4, At Bhayandar, Mira
+                            Road East, Mira Road and Beyond, Mumbai</p>
+                    </span>
+                    <figure class="overview-picture mx-auto mt-5 text-center maps-google">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.6378941325174!2d72.87024961126056!3d19.298106981877467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b040a297e1b9%3A0xebc95a17fe05da3!2sSalasar%20Woods!5e0!3m2!1sen!2sin!4v1712121566362!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </div>
+            </div>
+            <div class="row justify-content-center pb-5 pt-5">
+                <div class="container">
+                    <div class="h2-line text-center">
+                        <div class="line before"></div>
+                        <h2 class="custom text-center uppercase">Plans</h2>
+                        <div class="line after"></div>
+                    </div>
+                    <span class="lead mx-auto mt-4 text-center">
+                        <p class="text-black-50">Unit Plans</p>
+                    </span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-12 mb-4">
+                                <img loading="lazy" src="/Images/Woods-plan.jpg" alt="alt"
+                                    class="img-fluid modal-target">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center pt-5">
+                <div class="container">
+                    <div class="h2-line text-center">
+                        <div class="line before"></div>
+                        <h2 class="custom text-center uppercase">Salasar Exotica Amenities</h2>
+                        <div class="line after"></div>
+                    </div>
+                    <span class="lead mx-auto mt-4 text-center">
+                        <p class="text-black-50 p-description">
+                            Experience a harmonious lifestyle at Salasar Exotica, where amenities are crafted to enrich
+                            your physical, mental, and spiritual well-being. From cutting-edge fitness facilities to
+                            tranquil meditation areas and lively communal hubs, discover a sanctuary tailored for your
+                            holistic growth.</p>
+                    </span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <img loading="lazy" src="/Images/woods-1.jpeg" alt="alt" class="img-fluid modal-target">
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <img loading="lazy" src="/Images/woods-2.jpeg" alt="alt" class="img-fluid modal-target">
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <img loading="lazy" src="/Images/woods-3.jpg" alt="alt" class="img-fluid modal-target">
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <img loading="lazy" src="/Images/woods-4.jpg" alt="alt" class="img-fluid modal-target">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <section class="service-section py-5">
+                            <div class="container">
+                                <div class="row justify-content-center py-3">
+                                    <div class="col-md-8 col-12 text-center">
+                                        <p class="service-main-heading">Amenities</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 col-12">
+                                        <div class="icon-box">
+                                            <i class="fas fa-volleyball-ball service-icon"></i>
+                                            <p class="service-title"><a href="#">Volleyball Court</a></p>
+                                            <p class="service-para">Enjoy energetic matches in our volleyball court, a
+                                                perfect spot for friendly competitions and social gatherings.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4 mt-md-0">
+                                        <div class="icon-box">
+                                            <i class="fas fa-baseball service-icon"></i>
+                                            <p class="service-title"><a href="#">Cricket Pitch</a></p>
+                                            <p class="service-para">Practice your batting and bowling skills in our
+                                                well-maintained cricket pitch, ideal for cricket enthusiasts of all
+                                                ages.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 ">
+                                        <div class="icon-box">
+                                            <i class="fas fa-tree service-icon"></i>
+                                            <p class="service-title"><a href="#">Landscaping & Tree Planting</a></p>
+                                            <p class="service-para">Surround yourself with lush greenery and beautiful
+                                                landscapes, creating a serene and refreshing environment for relaxation.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-child service-icon"></i>
+                                            <p class="service-title"><a href="#">Children's Play Area</a></p>
+                                            <p class="service-para">Let your children explore and play in our safe and
+                                                enjoyable play area, fostering creativity and social interaction.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-wifi service-icon"></i>
+                                            <p class="service-title"><a href="#">High-Speed Internet</a></p>
+                                            <p class="service-para">Stay connected with our high-speed internet service,
+                                                providing seamless online access for work or leisure.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-water service-icon"></i>
+                                            <p class="service-title"><a href="#">Fountains</a></p>
+                                            <p class="service-para">Admire the beauty of our decorative fountains,
+                                                adding charm and elegance to the surroundings.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-child service-icon"></i>
+                                            <p class="service-title"><a href="#">Children's Play Area</a></p>
+                                            <p class="service-para">Let your children explore and play in our safe and
+                                                enjoyable play area, fostering creativity and social interaction.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-fire-extinguisher service-icon"></i>
+                                            <p class="service-title"><a href="#">Fire Fighting System</a></p>
+                                            <p class="service-para">Stay protected with our advanced fire fighting
+                                                system, ensuring the safety and security of all residents.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-car service-icon"></i>
+                                            <p class="service-title"><a href="#">Closed Car Parking</a></p>
+                                            <p class="service-para">Park your vehicles conveniently in our secure closed
+                                                car parking area, providing easy access and peace of mind.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-tint service-icon"></i>
+                                            <p class="service-title"><a href="#">24X7 Water Supply</a></p>
+                                            <p class="service-para">Enjoy uninterrupted access to clean and fresh water
+                                                with our reliable 24x7 water supply system.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-building service-icon"></i>
+                                            <p class="service-title"><a href="#">High Speed Elevators</a></p>
+                                            <p class="service-para">Experience swift and efficient vertical transport
+                                                with our high-speed elevator systems, ensuring convenience for all
+                                                residents.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-12 mt-4">
+                                        <div class="icon-box">
+                                            <i class="fas fa-shower service-icon"></i>
+                                            <p class="service-title"><a href="#">Rain Water Harvesting</a></p>
+                                            <p class="service-para">Contribute to environmental sustainability with our
+                                                rainwater harvesting system, conserving water resources and reducing
+                                                environmental impact.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row justify-content-center pb-5">
+                <div class="container">
+                    <div class="h2-line text-center">
+                        <div class="line before"></div>
+                        <h2 class="custom text-center uppercase">Download Catalog</h2>
+                        <div class="line after"></div>
+                    </div>
+                    <figure class="overview-picture mx-auto mt-5 text-center">
+                        <p class="text-muted mb-3"><i class="fas fa-info-circle me-2"></i>You can download the catalog
+                            of this property:</p>
+                        <a href="https://drive.google.com/uc?export=download&id=1H9mhZc_QE28feUjRR9X5myVRYiwaRV9Q"
+                            download class="btn btn-lg btn-primary download-btn">Download <i
+                                class="fas fa-file-download"></i></a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-5">
+
+        <div class="contactUs" id="contactus">
+            <div class="container">
+                <aside>
+                    <h1>How can we assist you with your project?</h1>
+
+                </aside>
+                <form id="form" data-netlify="true" action="/thankyou.html" data-netlify-recaptcha="true" method="POST"
+                    netlify>
+                    <input type="text" name="name" id="" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="phone" name="phone" id="phone" placeholder="Phone" required>
+                    <textarea class="form-control" name="message" id="message" placeholder="Message" required
+                        style="width: 100%; margin-right: 15px;resize:none; height: 150px; border:none; font-size:17px;"></textarea>
+                    <div style="width: 100%;" data-netlify-recaptcha="true"></div>
+                    <input type="submit" value="submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-6">
+        <div class="container px-3">
+            <div class="about">
+                <h1>About Company</h1>
+                <h2>
+                    SALASAR BUILDERS
+                    <p>HELPING YOU BUILD LEGACIES.</p>
+                </h2>
+                <p>Building Legacies One Name at a Time. Constructing identities that endure. From projects to
+                    properties, our expert team erects names with strength and distinction. Lay the foundation for
+                    success with Salasar Name Builder.</p>
+                <a href="https://www.facebook.com/salasarassociates"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></i></a>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About Us</a>
+                <a href="/properties.html">Properties</a>
+                <a href="/contact.html">Contact Us</a>
+                <a href="/index.html">Privacy Policy</a>
+            </div>
+            <div class="contact">
+                <h1>Contact us</h1>
+                <p>Salasar Business House, Ground and First Floor Shreevallabh, Behind D'Mart, Near Salasar Business
+                    Park, Bhayander (West), Thane - 401101</p>
+                <div>
+                    <p> <i class="fas fa-envelope phone-icon "></i> director@salasarbuilders.com</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-phone-alt phone-icon "></i> +91 22 2814 3400</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-phone-alt phone-icon"></i> +91 22 2804 9600</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2024 &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights
+            Reserved.</p>
+    </footer>
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img loading="lazy" id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+    <script>
+        var modal = document.getElementById('modal');
+
+        var modalClose = document.getElementById('modal-close');
+        modalClose.addEventListener('click', function () {
+            modal.style.display = "none";
+        });
+
+        // global handler
+        document.addEventListener('click', function (e) {
+            if (e.target.className.indexOf('modal-target') !== -1) {
+                var img = e.target;
+                var modalImg = document.getElementById("modal-content");
+                var captionText = document.getElementById("modal-caption");
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                captionText.innerHTML = img.alt;
+            }
+        });
+    </script>
+</body>
+
+</html>

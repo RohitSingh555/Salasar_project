@@ -84,11 +84,11 @@
                                 value="thane">
                             <label class="form-check-label" for="thaneCheckbox">Thane</label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <!-- <div class="form-check form-check-inline">
                             <input class="form-check-input location-filter" type="checkbox" id="puneCheckbox"
                                 value="pune">
                             <label class="form-check-label" for="puneCheckbox">Pune</label>
-                        </div>
+                        </div> -->
                         <div class="form-check form-check-inline">
                             <input class="form-check-input location-filter" type="checkbox" id="mumbaiCheckbox"
                                 value="mumbai">
@@ -101,9 +101,9 @@
                     <br />
                     <div class="flex-row align-items-center justify-content-center text-black">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input status-filter ongoing-checkbox" type="checkbox"
-                                id="ongoingCheckbox" value="ongoing">
-                            <label class="form-check-label" for="ongoingCheckbox">Ongoing</label>
+                            <input class="form-check-input status-filter Ongoing-checkbox" type="checkbox"
+                                id="OngoingCheckbox" value="Ongoing">
+                            <label class="form-check-label" for="OngoingCheckbox">Ongoing</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input status-filter completed-checkbox" type="checkbox"
@@ -131,12 +131,12 @@
                                 <p class="location-title">
                                     <i class="fas fa-map-marker-alt"></i> Thane
                                 </p>
-                                <p class="status-tag"><i class="fas fa-tag"></i> On Going</p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Ongoing</p>
                             </div>
                             <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="card shadow" data-location="pune" data-status="completed"
+                    <div class="card shadow" data-location="mumbai" data-status="completed"
                         onclick="window.location.href='/properties/jasmine.html'">
                         <img loading="lazy" class="card-img-top modal-target" src="/Images/jasmine_res.webp"
                             alt="Jasmine Residency">
@@ -144,14 +144,14 @@
                             <h5 class="card-title">Jasmine Residency</h5>
                             <div class="d-flex justify-content-between">
                                 <p class="location-title">
-                                    <i class="fas fa-map-marker-alt"></i> Pune
+                                    <i class="fas fa-map-marker-alt"></i> Mumbai
                                 </p>
-                                <p class="status-tag"><i class="fas fa-tag"></i> Completed</p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Ongoing</p>
                             </div>
                             <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="card shadow" data-location="mumbai" data-status="on-hold"
+                    <div class="card shadow" data-location="mumbai" data-status="on-going"
                         onclick="window.location.href='/properties/courtyard.html'">
                         <img loading="lazy" class="card-img-top modal-target" src="/Images/courtyard.webp"
                             alt="Salasar Courtyard">
@@ -161,7 +161,7 @@
                                 <p class="location-title">
                                     <i class="fas fa-map-marker-alt"></i> Mumbai
                                 </p>
-                                <p class="status-tag"><i class="fas fa-tag"></i> On Hold</p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Ongoing</p>
                             </div>
                             <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
@@ -181,7 +181,7 @@
                             <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="card shadow" data-location="mumbai" data-status="on-hold"
+                    <div class="card shadow" data-location="thane" data-status="on-going"
                         onclick="window.location.href='/properties/esquire.html'">
                         <img loading="lazy" class="card-img-top modal-target" src="/Images/Esquire.webp"
                             alt="Salasar Esquire">
@@ -189,14 +189,14 @@
                             <h5 class="card-title">Salasar Esquire</h5>
                             <div class="d-flex justify-content-between">
                                 <p class="location-title">
-                                    <i class="fas fa-map-marker-alt"></i> Mumbai
+                                    <i class="fas fa-map-marker-alt"></i> Thane
                                 </p>
-                                <p class="status-tag"><i class="fas fa-tag"></i> On Hold</p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Ongoing</p>
                             </div>
                             <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="card shadow" data-location="mumbai" data-status="on-hold"
+                    <div class="card shadow" data-location="mumbai" data-status="on-going"
                         onclick="window.location.href='/properties/woods.html'">
                         <img loading="lazy" class="card-img-top modal-target" src="/Images/Woods.jpg"
                             alt="Salasar Woods">
@@ -206,12 +206,12 @@
                                 <p class="location-title">
                                     <i class="fas fa-map-marker-alt"></i> Mumbai
                                 </p>
-                                <p class="status-tag"><i class="fas fa-tag"></i> On Hold</p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Ongoing</p>
                             </div>
                             <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="card shadow" data-location="mumbai" data-status="on-hold"
+                    <div class="card shadow" data-location="thane" data-status="on-going"
                         onclick="window.location.href='/properties/sheetal_sangeet.html'">
                         <img loading="lazy" class="card-img-top modal-target" src="/Images/sheetal.jpg"
                             alt="Salasar Sangeet sheetal">
@@ -219,9 +219,39 @@
                             <h5 class="card-title">Salasar Sheetal Sangeet</h5>
                             <div class="d-flex justify-content-between">
                                 <p class="location-title">
-                                    <i class="fas fa-map-marker-alt"></i> Mumbai
+                                    <i class="fas fa-map-marker-alt"></i> Thane
                                 </p>
-                                <p class="status-tag"><i class="fas fa-tag"></i> On Hold</p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Ongoing</p>
+                            </div>
+                            <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card shadow" data-location="thane" data-status="on-going"
+                        onclick="window.location.href='/properties/exotica-2.html'">
+                        <img loading="lazy" class="card-img-top modal-target" src="/Images/exotica-2.jpg"
+                            alt="Salasar Exotica II">
+                        <div class="card-body">
+                            <h5 class="card-title">Salasar Exotica II</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="location-title">
+                                    <i class="fas fa-map-marker-alt"></i> Thane
+                                </p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Ongoing</p>
+                            </div>
+                            <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card shadow" data-location="thane" data-status="completed"
+                        onclick="window.location.href='/properties/shrivallabh.html'">
+                        <img loading="lazy" class="card-img-top modal-target" src="/Images/shrivallabh.jpeg"
+                            alt="Salasar Shree Vallabh">
+                        <div class="card-body">
+                            <h5 class="card-title">Salasar Shree Vallabh</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="location-title">
+                                    <i class="fas fa-map-marker-alt"></i> Thane
+                                </p>
+                                <p class="status-tag"><i class="fas fa-tag"></i> Completed</p>
                             </div>
                             <a href="#" class="show-more-btn">Show More <i class="fas fa-chevron-right"></i></a>
                         </div>

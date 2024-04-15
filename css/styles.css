@@ -1262,10 +1262,6 @@ h1 span {
         font-size: 13px;
     }
 
-    .container {
-        width: 520px;
-    }
-
     #sec-0 header nav a {
         background-color: transparent;
     }
@@ -1289,10 +1285,6 @@ h1 span {
 @media (min-width: 768px) {
     html {
         font-size: 14px;
-    }
-
-    .container {
-        width: 720px;
     }
 
     #sec-0 header.top {

@@ -256,8 +256,7 @@
         </div>
     </section>
     <footer>
-        <p>Copyright &copy; 2024 &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights
-            Reserved.</p>
+        <p id="copyright">&copy; <span id="year"></span> &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
     <div id="modal" class="modal">
         <span id="modal-close" class="modal-close">&times;</span>
@@ -266,6 +265,8 @@
     </div>
     <script>
         var modal = document.getElementById('modal');
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
 
         var modalClose = document.getElementById('modal-close');
         modalClose.addEventListener('click', function () {

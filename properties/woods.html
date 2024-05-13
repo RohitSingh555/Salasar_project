@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title"
+        content="Find Your Bliss at Salasar Woods: Luxury Living in Mumbai">
     <meta name="description"
         content="Explore the impressive portfolio of properties offered by Salasar Group, featuring enduring structures designed to lay the foundation for your real estate success.">
 
@@ -68,7 +70,7 @@
                 </a>
             </div>
             <div class="hero-img-box">
-                <img style="min-height: 600px;" loading="lazy" src="/Images/Woods-bg.png" alt="alt"
+                <img style="min-height: 600px;" loading="lazy" src="/Images/Woods-bg.png" alt="Escape to tranquillity at Salasar Woods by Salasar Builders! 🌳 Enjoy a landscaped garden, reliable power backup, and more in our luxurious 1 & 2 BHK residences. Nestled in Mumbai's vibrant Mira Road area, with easy access to top schools and hospitals. Experience luxury living at its finest!"
                     class="hero-img modal-target" />
             </div>
             <div class="delivered-meals pt-4">
@@ -378,8 +380,7 @@
         </div>
     </section>
     <footer>
-        <p>Copyright &copy; 2024 &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights
-            Reserved.</p>
+        <p id="copyright">&copy; <span id="year"></span> &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
     <div id="modal" class="modal">
         <span id="modal-close" class="modal-close">&times;</span>
@@ -387,7 +388,10 @@
         <div id="modal-caption" class="modal-caption"></div>
     </div>
     <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+
         var modal = document.getElementById('modal');
+
 
         var modalClose = document.getElementById('modal-close');
         modalClose.addEventListener('click', function () {

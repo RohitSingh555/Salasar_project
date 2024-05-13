@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title"
+    content="1 and 2 BHK Luxury Flats at Mira Road, Thane | Salasar Exotica">
     <meta name="description"
         content="Explore the impressive portfolio of properties offered by Salasar Group, featuring enduring structures designed to lay the foundation for your real estate success.">
-
+    
     <title>Salasar Exotica</title>
     <link rel="icon" type="image/x-icon" href="/Images/Salasar Icon.svg">
     <link href="../css/property_detail.css" rel="stylesheet" type="text/css">
@@ -340,8 +342,7 @@
         </div>
     </section>
     <footer>
-        <p>Copyright &copy; 2024 &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights
-            Reserved.</p>
+        <p id="copyright">&copy; <span id="year"></span> &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
     <div id="modal" class="modal">
         <span id="modal-close" class="modal-close">&times;</span>
@@ -350,6 +351,8 @@
     </div>
     <script>
         var modal = document.getElementById('modal');
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
 
         var modalClose = document.getElementById('modal-close');
         modalClose.addEventListener('click', function () {

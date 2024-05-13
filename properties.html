@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Explore the impressive portfolio of properties offered by Salasar Group, featuring enduring structures designed to lay the foundation for your real estate success.">
+    <meta name="title"
+        content="Salasar Builders: Luxury Flats in Mira Road | Premium Properties & Amenities">
 
     <meta name="description"
-        content="Explore the impressive portfolio of properties offered by Salasar Group, featuring enduring structures designed to lay the foundation for your real estate success.">
+        content="Discover luxury flats in Mumbai by Salasar Builders. Elevate your living experience with our exquisite properties. Find your dream home today!">
     <meta property="og:title" content="Properties">
     <meta property="og:description"
-        content="Explore the impressive portfolio of properties offered by Salasar Group, featuring enduring structures designed to lay the foundation for your real estate success.">
+        content="Discover luxury flats in Mumbai by Salasar Builders. Elevate your living experience with our exquisite properties. Find your dream home today!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://salasarbuilders.com/properties">
     <meta property="og:image" content="https://salasarbuilders.com/images/properties.jpg">
@@ -307,8 +307,7 @@
         </div>
     </section>
     <footer>
-        <p>Copyright &copy; 2024 &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights
-            Reserved.</p>
+        <p id="copyright">&copy; <span id="year"></span> &nbsp;<img loading="lazy" src="/Images/Salasar Logo.webp" alt="logo"> &nbsp; All Rights Reserved.</p>
     </footer>
     <div id="modal" class="modal">
         <span id="modal-close" class="modal-close">&times;</span>
@@ -369,6 +368,8 @@
     </script>
     <script>
         var modal = document.getElementById('modal');
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
 
         var modalClose = document.getElementById('modal-close');
         modalClose.addEventListener('click', function () {

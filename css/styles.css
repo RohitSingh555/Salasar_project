@@ -1983,3 +1983,26 @@ footer img {
     text-decoration: none;
     cursor: pointer;
 }
+
+.blog-list .card-img-top{
+    max-height: 250px;
+}
+.blog-list .card-title{
+    cursor: pointer;
+}
+.blog-list .prop-location{
+    font-size: 14px;
+    font-weight: 500;
+}
+.blog-list .post-date{
+    font-size: 14px;
+    color: #999;
+}
+.single-title{
+    font-weight: 600;
+}
+.single-blog-page h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}

@@ -1,45 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>http://salasarbuilders.com/</loc>
+<loc>https://salasarbuilders.com/</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/about</loc>
+<loc>https://salasarbuilders.com/about</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties</loc>
+<loc>https://salasarbuilders.com/properties</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/contact</loc>
+<loc>https://salasarbuilders.com/contact</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/exotica</loc>
+<loc>https://salasarbuilders.com/properties/exotica</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/jasmine</loc>
+<loc>https://salasarbuilders.com/properties/jasmine</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/courtyard</loc>
+<loc>https://salasarbuilders.com/properties/courtyard</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/esquire</loc>
+<loc>https://salasarbuilders.com/properties/esquire</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/exotica-2</loc>
+<loc>https://salasarbuilders.com/properties/exotica-2</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/sheetal_sangeet</loc>
+<loc>https://salasarbuilders.com/properties/sheetal_sangeet</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/shrivallabh</loc>
+<loc>https://salasarbuilders.com/properties/shrivallabh</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/woods</loc>
+<loc>https://salasarbuilders.com/properties/woods</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/properties/kasturi</loc>
+<loc>https://salasarbuilders.com/properties/kasturi</loc>
 </url>
 <url>
-  <loc>http://salasarbuilders.com/privacypolicy</loc>
+<loc>https://salasarbuilders.com/privacypolicy</loc>
+</url>
+<url>
+<loc>https://salasarbuilders.com/blog</loc>
+</url>
+<url>
+<loc>https://salasarbuilders.com/blogs/building-dreams-salasar-builders-contribution-to-mira-roads-urban-landscape</loc>
 </url>
 </urlset>

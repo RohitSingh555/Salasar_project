@@ -549,7 +549,7 @@ h2 span {
     align-content: space-around;
 }
 
-#sec-3 .card {
+#sec-3 .card, .blog-list .card{
     width: 90%;
     margin-bottom: 30px;
     background-color: #ffffff;
@@ -558,7 +558,7 @@ h2 span {
     padding: 1%;
 }
 
-#sec-3 .card p {
+#sec-3 .card p, .blog-list .card p {
     text-align: justify;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
@@ -1982,6 +1982,12 @@ footer img {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+.blog-list .blog-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(250px, 33%, 400px), 1fr));
+    gap: 15px;
 }
 
 .blog-list .card-img-top{

@@ -1996,6 +1996,10 @@ footer img {
 .blog-list .card-title{
     cursor: pointer;
 }
+.blog-list .card-title a{
+    text-decoration: none;
+    color: rgb(33, 37, 41);
+}
 .blog-list .prop-location{
     font-size: 14px;
     font-weight: 500;

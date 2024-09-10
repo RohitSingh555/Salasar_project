@@ -311,7 +311,7 @@ body {
     margin-bottom: 10px;
 }
 
-#sec-0 article h2 {
+#sec-0 article .banner-title {
     text-transform: uppercase;
     font-size: 1.85rem;
     color: var(--txtaccent);
@@ -1180,7 +1180,7 @@ h2 span {
         padding-left: 3px;
     }
 
-    #sec-0 article h2 {
+    #sec-0 article .banner-title {
         font-size: 38px;
     }
 
@@ -1340,7 +1340,7 @@ h2 span {
         font-size: 2rem;
     }
 
-    #sec-0 article h2 {
+    #sec-0 article .banner-title {
         font-size: 3.5rem;
         width: 70%;
     }
@@ -1995,6 +1995,7 @@ footer img {
 }
 .blog-list .card-title{
     cursor: pointer;
+    font-size: 1.25rem;
 }
 .blog-list .card-title a{
     text-decoration: none;
@@ -2019,4 +2020,7 @@ footer img {
 .single-blog-page h3{
     font-weight: 600;
     margin-top: 1.5rem;
+}
+.why-choose-us-subhead{
+    font-size: 1.25rem;
 }

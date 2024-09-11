@@ -361,7 +361,7 @@ body {
     text-align: center;
 }
 
-#sec-1 article h1 {
+#sec-1 article h1, #sec-1 article .section-main-title {
     font-size: 2.3rem;
     color: rgb(206, 147, 0);
     font-weight: 400;
@@ -486,7 +486,7 @@ body {
     padding-bottom: 30px;
 }
 
-h1 {
+h1, .section-main-title{
     position: relative;
     padding: 0;
     margin: 0;
@@ -1482,7 +1482,7 @@ h2 span {
         font-weight: 600;
     }
 
-    #sec-1 article h1 {
+    #sec-1 article h1, #sec-1 article .section-main-title{
         font-size: 2.7rem;
     }
 
@@ -1993,7 +1993,7 @@ footer img {
 .blog-list .card-img-top{
     max-height: 250px;
 }
-.blog-list .card-title{
+.blog-list .card-title, .card-title{
     cursor: pointer;
     font-size: 1.25rem;
 }
